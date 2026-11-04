@@ -1,0 +1,5 @@
+MK application demonstration by Annora
+
+This hosted interactive study includes Annora's original illustrative conveyor model, prepared for demonstration and review. The model is not manufacturer CAD, a specification, or validated performance. The MK mark, official installation photographs, historical case screenshots and third-party components retain their respective ownership and credits. See explorer/LICENSES.txt for the original model and software notices.
+
+Application records and contact examples are synthetic. Edits are stored in the browser. No commercial quote, inquiry, engineering approval or notification is sent to MK.

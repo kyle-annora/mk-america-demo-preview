@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tube transfer · MK Explorer</title>
+  <link rel="icon" href="../assets/mk-logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <a id="presentation" href="../explorer/index.html?model=tube-transfer&amp;presentation=1">Open the conveyor presentation</a>
+  <script>
+    const link = document.getElementById('presentation');
+    const destination = new URL(link.href);
+    const chapter = location.hash.slice(1);
+    if (['travel', 'peel', 'handoff'].includes(chapter)) destination.hash = chapter;
+    const origin = new URLSearchParams(location.search).get('from');
+    if (origin) destination.searchParams.set('from', origin);
+    link.href = destination.href;
+    location.replace(destination.href);
+  </script>
+</body>
+</html>
