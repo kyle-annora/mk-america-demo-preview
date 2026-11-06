@@ -1,0 +1,5597 @@
+{
+  "schemaVersion": 1,
+  "root": {
+    "id": "tube-transfer",
+    "title": "Tube transfer conveyor",
+    "description": "A cleated conveyor receives soft tubes, carries them up an incline and presents them to a downstream station."
+  },
+  "source": {
+    "author": "Annora",
+    "license": "Local demonstration study",
+    "attribution": "Original study by Annora. MK mark belongs to mk North America.",
+    "description": "A cleated conveyor receives soft tubes, carries them up an incline and presents them to a downstream station.",
+    "note": "Illustrative geometry and motion, informed by MK’s published tube-feeding case. Not manufacturer CAD, a specified configuration or validated performance.",
+    "url": "https://uploads.mknorthamerica.com/case-studies/casestudytubefeedingconveyor/",
+    "file": "model.glb",
+    "preserved": [
+      "geometry",
+      "source hierarchy",
+      "materials",
+      "pivots",
+      "authored animation channels"
+    ],
+    "sha256": "4e4d274d63072e6150cc21ebd7202508b79f95e0d77f0e909eb5b3f1250c02bf"
+  },
+  "bounds": [
+    [
+      -2.369999997317791,
+      -1.0430813157658037e-10,
+      -0.46799999475479126
+    ],
+    [
+      2.3660000041127205,
+      1.7799999713897705,
+      0.47802000004891304
+    ]
+  ],
+  "orientation": {
+    "up": "+Y",
+    "sourceUnits": "unverified",
+    "defaultDirection": [
+      -0.69,
+      0.73,
+      1.32
+    ]
+  },
+  "groups": [
+    {
+      "id": "infeed",
+      "title": "Infeed",
+      "description": "Crosswise tubes enter the first pockets at the low end.",
+      "meshNames": [
+        "entry_belt",
+        "entry_return",
+        "entry_near_rail",
+        "entry_near_slots",
+        "entry_near_guide",
+        "entry_near_clips",
+        "entry_near_bolts",
+        "entry_far_rail",
+        "entry_far_slots",
+        "entry_far_guide",
+        "entry_far_clips",
+        "entry_far_bolts",
+        "flight_1",
+        "flight_2",
+        "flight_32",
+        "flight_33",
+        "flight_34",
+        "tube_1",
+        "tail_belt_wrap",
+        "tail_roller",
+        "tail_far_plate",
+        "tail_far_hub",
+        "tail_near_plate",
+        "tail_near_hub"
+      ],
+      "children": [
+        {
+          "id": "entry-deck",
+          "title": "Entry deck",
+          "meshNames": [
+            "entry_belt",
+            "entry_return",
+            "entry_near_rail",
+            "entry_near_slots",
+            "entry_near_guide",
+            "entry_near_clips",
+            "entry_near_bolts",
+            "entry_far_rail",
+            "entry_far_slots",
+            "entry_far_guide",
+            "entry_far_clips",
+            "entry_far_bolts",
+            "tail_belt_wrap",
+            "tail_roller",
+            "tail_far_plate",
+            "tail_far_hub",
+            "tail_near_plate",
+            "tail_near_hub"
+          ]
+        },
+        {
+          "id": "entry-carriers",
+          "title": "Incoming carriers",
+          "meshNames": [
+            "flight_1",
+            "flight_2",
+            "flight_32",
+            "flight_33",
+            "flight_34",
+            "tube_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elevation",
+      "title": "Elevation",
+      "description": "Follow the cleats, guides and tubes up the rising section.",
+      "meshNames": [
+        "incline_belt",
+        "incline_return",
+        "incline_near_rail",
+        "incline_near_slots",
+        "incline_near_guide",
+        "incline_near_clips",
+        "incline_near_bolts",
+        "incline_far_rail",
+        "incline_far_slots",
+        "incline_far_guide",
+        "incline_far_clips",
+        "incline_far_bolts",
+        "flight_3",
+        "flight_4",
+        "flight_5",
+        "flight_6",
+        "flight_7",
+        "flight_8",
+        "flight_9",
+        "flight_10",
+        "flight_11",
+        "flight_24",
+        "flight_25",
+        "flight_26",
+        "flight_27",
+        "flight_28",
+        "flight_29",
+        "flight_30",
+        "flight_31",
+        "tube_2",
+        "tube_3",
+        "tube_4",
+        "transition_cover",
+        "nameplate",
+        "mk_red_ink",
+        "mk_blue_ink"
+      ],
+      "children": [
+        {
+          "id": "lift-deck",
+          "title": "Incline deck",
+          "meshNames": [
+            "incline_belt",
+            "incline_return",
+            "incline_near_rail",
+            "incline_near_slots",
+            "incline_near_guide",
+            "incline_near_clips",
+            "incline_near_bolts",
+            "incline_far_rail",
+            "incline_far_slots",
+            "incline_far_guide",
+            "incline_far_clips",
+            "incline_far_bolts"
+          ]
+        },
+        {
+          "id": "lift-carriers",
+          "title": "Traveling pockets",
+          "meshNames": [
+            "flight_3",
+            "flight_4",
+            "flight_5",
+            "flight_6",
+            "flight_7",
+            "flight_8",
+            "flight_9",
+            "flight_10",
+            "flight_11",
+            "flight_24",
+            "flight_25",
+            "flight_26",
+            "flight_27",
+            "flight_28",
+            "flight_29",
+            "flight_30",
+            "flight_31",
+            "tube_2",
+            "tube_3",
+            "tube_4"
+          ]
+        },
+        {
+          "id": "transition-guard",
+          "title": "Transition guard",
+          "meshNames": [
+            "transition_cover",
+            "nameplate",
+            "mk_red_ink",
+            "mk_blue_ink"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discharge",
+      "title": "Discharge",
+      "description": "The upper deck presents the tubes to the next station.",
+      "meshNames": [
+        "upper_belt",
+        "upper_return",
+        "upper_near_rail",
+        "upper_near_slots",
+        "upper_near_guide",
+        "upper_near_clips",
+        "upper_near_bolts",
+        "upper_far_rail",
+        "upper_far_slots",
+        "upper_far_guide",
+        "upper_far_clips",
+        "upper_far_bolts",
+        "flight_12",
+        "flight_13",
+        "flight_14",
+        "flight_15",
+        "flight_16",
+        "flight_17",
+        "flight_18",
+        "flight_19",
+        "flight_20",
+        "flight_21",
+        "flight_22",
+        "flight_23",
+        "tube_5",
+        "head_belt_wrap",
+        "head_roller",
+        "head_far_plate",
+        "head_far_hub",
+        "head_near_plate",
+        "head_near_hub"
+      ],
+      "children": [
+        {
+          "id": "upper-deck",
+          "title": "Upper deck",
+          "meshNames": [
+            "upper_belt",
+            "upper_return",
+            "upper_near_rail",
+            "upper_near_slots",
+            "upper_near_guide",
+            "upper_near_clips",
+            "upper_near_bolts",
+            "upper_far_rail",
+            "upper_far_slots",
+            "upper_far_guide",
+            "upper_far_clips",
+            "upper_far_bolts"
+          ]
+        },
+        {
+          "id": "exit-carriers",
+          "title": "Outgoing carriers",
+          "meshNames": [
+            "flight_12",
+            "flight_13",
+            "flight_14",
+            "flight_15",
+            "flight_16",
+            "flight_17",
+            "flight_18",
+            "flight_19",
+            "flight_20",
+            "flight_21",
+            "flight_22",
+            "flight_23",
+            "tube_5"
+          ]
+        },
+        {
+          "id": "head-drive",
+          "title": "Discharge roller",
+          "meshNames": [
+            "head_belt_wrap",
+            "head_roller",
+            "head_far_plate",
+            "head_far_hub",
+            "head_near_plate",
+            "head_near_hub"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interfaces",
+      "title": "Interfaces",
+      "description": "The stand and mount illustrate where supports meet the process.",
+      "meshNames": [
+        "far_leg_1",
+        "far_foot_1",
+        "far_leg_2",
+        "far_foot_2",
+        "far_leg_3",
+        "far_foot_3",
+        "far_stand_braces",
+        "near_leg_1",
+        "near_foot_1",
+        "near_leg_2",
+        "near_foot_2",
+        "near_leg_3",
+        "near_foot_3",
+        "near_stand_braces",
+        "transverse_beams",
+        "side_bracket",
+        "bracket_hardware"
+      ],
+      "children": [
+        {
+          "id": "floor-stand",
+          "title": "Adjustable stand",
+          "meshNames": [
+            "far_leg_1",
+            "far_foot_1",
+            "far_leg_2",
+            "far_foot_2",
+            "far_leg_3",
+            "far_foot_3",
+            "far_stand_braces",
+            "near_leg_1",
+            "near_foot_1",
+            "near_leg_2",
+            "near_foot_2",
+            "near_leg_3",
+            "near_foot_3",
+            "near_stand_braces",
+            "transverse_beams"
+          ]
+        },
+        {
+          "id": "line-mount",
+          "title": "Line-side mount",
+          "meshNames": [
+            "side_bracket",
+            "bracket_hardware"
+          ]
+        }
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "entry-belt",
+      "meshName": "entry_belt",
+      "sourceName": "entry_belt",
+      "sourceNodeIndex": 1,
+      "sourcePath": "/TubeTransferStudy/entry_belt",
+      "title": "Entry belt",
+      "description": "The dark carrying surface runs between the guide rails.",
+      "center": [
+        -1.9449999928474426,
+        0.6495000123977661,
+        0
+      ],
+      "bounds": [
+        [
+          -2.25,
+          0.625,
+          -0.36000001430511475
+        ],
+        [
+          -1.6399999856948853,
+          0.6740000247955322,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 44,
+      "sourceMaterial": "polymer",
+      "finishFamily": "polymer",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.25,
+          0.625,
+          -0.36000001430511475
+        ],
+        [
+          -1.6399999856948853,
+          0.6740000247955322,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "entry-return",
+      "meshName": "entry_return",
+      "sourceName": "entry_return",
+      "sourceNodeIndex": 2,
+      "sourcePath": "/TubeTransferStudy/entry_return",
+      "title": "Entry return strand",
+      "description": "The lower strand shows the illustrative return path.",
+      "center": [
+        -1.9449999928474426,
+        0.460999995470047,
+        0
+      ],
+      "bounds": [
+        [
+          -2.25,
+          0.43799999356269836,
+          -0.36000001430511475
+        ],
+        [
+          -1.6399999856948853,
+          0.48399999737739563,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 44,
+      "sourceMaterial": "polymer",
+      "finishFamily": "polymer",
+      "explode": [
+        0,
+        -0.24,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.25,
+          0.43799999356269836,
+          -0.36000001430511475
+        ],
+        [
+          -1.6399999856948853,
+          0.48399999737739563,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "entry-near-rail",
+      "meshName": "entry_near_rail",
+      "sourceName": "entry_near_rail",
+      "sourceNodeIndex": 3,
+      "sourcePath": "/TubeTransferStudy/entry_near_rail",
+      "title": "Entry near rail",
+      "description": "A longitudinal extrusion follows the conveyor profile.",
+      "center": [
+        -1.9449999928474426,
+        0.5619999915361404,
+        0.397
+      ],
+      "bounds": [
+        [
+          -2.25,
+          0.4650000035762787,
+          0.3649999984800816
+        ],
+        [
+          -1.6399999856948853,
+          0.6589999794960022,
+          0.42900000151991846
+        ]
+      ],
+      "triangles": 80,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.08,
+        0.35
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.25,
+          0.4650000035762787,
+          0.3649999984800816
+        ],
+        [
+          -1.6399999856948853,
+          0.6589999794960022,
+          0.42900000151991846
+        ]
+      ]
+    },
+    {
+      "id": "entry-near-slots",
+      "meshName": "entry_near_slots",
+      "sourceName": "entry_near_slots",
+      "sourceNodeIndex": 4,
+      "sourcePath": "/TubeTransferStudy/entry_near_slots",
+      "title": "Entry profile slots",
+      "description": "Two inset channels identify the sides of the extrusion.",
+      "center": [
+        -1.9449999928474426,
+        0.5580000281333923,
+        0.42490000010281803
+      ],
+      "bounds": [
+        [
+          -2.25,
+          0.5070000290870667,
+          0.42459999968111517
+        ],
+        [
+          -1.6399999856948853,
+          0.609000027179718,
+          0.4252000005245209
+        ]
+      ],
+      "triangles": 88,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.08,
+        0.36
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.25,
+          0.5070000290870667,
+          0.42459999968111517
+        ],
+        [
+          -1.6399999856948853,
+          0.609000027179718,
+          0.4252000005245209
+        ]
+      ]
+    },
+    {
+      "id": "entry-near-guide",
+      "meshName": "entry_near_guide",
+      "sourceName": "entry_near_guide",
+      "sourceNodeIndex": 5,
+      "sourcePath": "/TubeTransferStudy/entry_near_guide",
+      "title": "Entry side guide",
+      "description": "A raised guide stands on either side of the moving tubes.",
+      "center": [
+        -1.9449999928474426,
+        0.698500007390976,
+        0.3789999995343387
+      ],
+      "bounds": [
+        [
+          -2.25,
+          0.6480000019073486,
+          0.370499999538064
+        ],
+        [
+          -1.6399999856948853,
+          0.7490000128746033,
+          0.3874999995306134
+        ]
+      ],
+      "triangles": 44,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0.1,
+        0.44
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.25,
+          0.6480000019073486,
+          0.370499999538064
+        ],
+        [
+          -1.6399999856948853,
+          0.7490000128746033,
+          0.3874999995306134
+        ]
+      ]
+    },
+    {
+      "id": "entry-near-clips",
+      "meshName": "entry_near_clips",
+      "sourceName": "entry_near_clips",
+      "sourceNodeIndex": 6,
+      "sourcePath": "/TubeTransferStudy/entry_near_clips",
+      "title": "Entry retaining clips",
+      "description": "Clips connect the guide to the extrusion.",
+      "center": [
+        -1.9450000524520874,
+        0.6319999992847443,
+        0.4399999976158142
+      ],
+      "bounds": [
+        [
+          -2.130000114440918,
+          0.5360000133514404,
+          0.43299999833106995
+        ],
+        [
+          -1.7599999904632568,
+          0.7279999852180481,
+          0.44699999690055847
+        ]
+      ],
+      "triangles": 216,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        0.54
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.130000114440918,
+          0.5360000133514404,
+          0.43299999833106995
+        ],
+        [
+          -1.7599999904632568,
+          0.7279999852180481,
+          0.44699999690055847
+        ]
+      ]
+    },
+    {
+      "id": "entry-near-bolts",
+      "meshName": "entry_near_bolts",
+      "sourceName": "entry_near_bolts",
+      "sourceNodeIndex": 7,
+      "sourcePath": "/TubeTransferStudy/entry_near_bolts",
+      "title": "Entry clip fasteners",
+      "description": "Example fastener locations for this study.",
+      "center": [
+        -1.9449999928474426,
+        0.632999986410141,
+        0.45899999141693115
+      ],
+      "bounds": [
+        [
+          -2.115499973297119,
+          0.5519999861717224,
+          0.44999998807907104
+        ],
+        [
+          -1.7745000123977661,
+          0.7139999866485596,
+          0.46799999475479126
+        ]
+      ],
+      "triangles": 1088,
+      "sourceMaterial": "polished",
+      "finishFamily": "polished",
+      "explode": [
+        0,
+        0,
+        0.62
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.115499973297119,
+          0.5519999861717224,
+          0.44999998807907104
+        ],
+        [
+          -1.7745000123977661,
+          0.7139999866485596,
+          0.46799999475479126
+        ]
+      ]
+    },
+    {
+      "id": "entry-far-rail",
+      "meshName": "entry_far_rail",
+      "sourceName": "entry_far_rail",
+      "sourceNodeIndex": 8,
+      "sourcePath": "/TubeTransferStudy/entry_far_rail",
+      "title": "Entry far rail",
+      "description": "A longitudinal extrusion follows the conveyor profile.",
+      "center": [
+        -1.9449999928474426,
+        0.5619999915361404,
+        -0.397
+      ],
+      "bounds": [
+        [
+          -2.25,
+          0.4650000035762787,
+          -0.42900000151991846
+        ],
+        [
+          -1.6399999856948853,
+          0.6589999794960022,
+          -0.3649999984800816
+        ]
+      ],
+      "triangles": 80,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.08,
+        -0.35
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.25,
+          0.4650000035762787,
+          -0.42900000151991846
+        ],
+        [
+          -1.6399999856948853,
+          0.6589999794960022,
+          -0.3649999984800816
+        ]
+      ]
+    },
+    {
+      "id": "entry-far-slots",
+      "meshName": "entry_far_slots",
+      "sourceName": "entry_far_slots",
+      "sourceNodeIndex": 9,
+      "sourcePath": "/TubeTransferStudy/entry_far_slots",
+      "title": "Entry profile slots",
+      "description": "Two inset channels identify the sides of the extrusion.",
+      "center": [
+        -1.9449999928474426,
+        0.5580000281333923,
+        -0.42490000010281803
+      ],
+      "bounds": [
+        [
+          -2.25,
+          0.5070000290870667,
+          -0.4252000005245209
+        ],
+        [
+          -1.6399999856948853,
+          0.609000027179718,
+          -0.42459999968111517
+        ]
+      ],
+      "triangles": 88,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.08,
+        -0.36
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.25,
+          0.5070000290870667,
+          -0.4252000005245209
+        ],
+        [
+          -1.6399999856948853,
+          0.609000027179718,
+          -0.42459999968111517
+        ]
+      ]
+    },
+    {
+      "id": "entry-far-guide",
+      "meshName": "entry_far_guide",
+      "sourceName": "entry_far_guide",
+      "sourceNodeIndex": 10,
+      "sourcePath": "/TubeTransferStudy/entry_far_guide",
+      "title": "Entry side guide",
+      "description": "A raised guide stands on either side of the moving tubes.",
+      "center": [
+        -1.9449999928474426,
+        0.7260000109672546,
+        -0.3790000004656613
+      ],
+      "bounds": [
+        [
+          -2.25,
+          0.6480000019073486,
+          -0.387500000461936
+        ],
+        [
+          -1.6399999856948853,
+          0.8040000200271606,
+          -0.3705000004693866
+        ]
+      ],
+      "triangles": 44,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0.1,
+        -0.44
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.25,
+          0.6480000019073486,
+          -0.387500000461936
+        ],
+        [
+          -1.6399999856948853,
+          0.8040000200271606,
+          -0.3705000004693866
+        ]
+      ]
+    },
+    {
+      "id": "entry-far-clips",
+      "meshName": "entry_far_clips",
+      "sourceName": "entry_far_clips",
+      "sourceNodeIndex": 11,
+      "sourcePath": "/TubeTransferStudy/entry_far_clips",
+      "title": "Entry retaining clips",
+      "description": "Clips connect the guide to the extrusion.",
+      "center": [
+        -1.9450000524520874,
+        0.6319999992847443,
+        -0.4399999976158142
+      ],
+      "bounds": [
+        [
+          -2.130000114440918,
+          0.5360000133514404,
+          -0.44699999690055847
+        ],
+        [
+          -1.7599999904632568,
+          0.7279999852180481,
+          -0.43299999833106995
+        ]
+      ],
+      "triangles": 216,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        -0.54
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.130000114440918,
+          0.5360000133514404,
+          -0.44699999690055847
+        ],
+        [
+          -1.7599999904632568,
+          0.7279999852180481,
+          -0.43299999833106995
+        ]
+      ]
+    },
+    {
+      "id": "entry-far-bolts",
+      "meshName": "entry_far_bolts",
+      "sourceName": "entry_far_bolts",
+      "sourceNodeIndex": 12,
+      "sourcePath": "/TubeTransferStudy/entry_far_bolts",
+      "title": "Entry clip fasteners",
+      "description": "Example fastener locations for this study.",
+      "center": [
+        -1.9449999928474426,
+        0.632999986410141,
+        -0.45899999141693115
+      ],
+      "bounds": [
+        [
+          -2.115499973297119,
+          0.5519999861717224,
+          -0.46799999475479126
+        ],
+        [
+          -1.7745000123977661,
+          0.7139999866485596,
+          -0.44999998807907104
+        ]
+      ],
+      "triangles": 1088,
+      "sourceMaterial": "polished",
+      "finishFamily": "polished",
+      "explode": [
+        0,
+        0,
+        -0.62
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.115499973297119,
+          0.5519999861717224,
+          -0.46799999475479126
+        ],
+        [
+          -1.7745000123977661,
+          0.7139999866485596,
+          -0.44999998807907104
+        ]
+      ]
+    },
+    {
+      "id": "incline-belt",
+      "meshName": "incline_belt",
+      "sourceName": "incline_belt",
+      "sourceNodeIndex": 13,
+      "sourcePath": "/TubeTransferStudy/incline_belt",
+      "title": "Incline belt",
+      "description": "The dark carrying surface runs between the guide rails.",
+      "center": [
+        -0.4700000286102295,
+        1.1444999873638153,
+        0
+      ],
+      "bounds": [
+        [
+          -1.6399999856948853,
+          0.6389999985694885,
+          -0.36000001430511475
+        ],
+        [
+          0.6999999284744263,
+          1.649999976158142,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 76,
+      "sourceMaterial": "polymer",
+      "finishFamily": "polymer",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6399999856948853,
+          0.6389999985694885,
+          -0.36000001430511475
+        ],
+        [
+          0.6999999284744263,
+          1.649999976158142,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "incline-return",
+      "meshName": "incline_return",
+      "sourceName": "incline_return",
+      "sourceNodeIndex": 14,
+      "sourcePath": "/TubeTransferStudy/incline_return",
+      "title": "Incline return strand",
+      "description": "The lower strand shows the illustrative return path.",
+      "center": [
+        -0.4700000286102295,
+        0.9560000151395798,
+        0
+      ],
+      "bounds": [
+        [
+          -1.6399999856948853,
+          0.4519999921321869,
+          -0.36000001430511475
+        ],
+        [
+          0.6999999284744263,
+          1.4600000381469727,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 76,
+      "sourceMaterial": "polymer",
+      "finishFamily": "polymer",
+      "explode": [
+        0,
+        -0.24,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6399999856948853,
+          0.4519999921321869,
+          -0.36000001430511475
+        ],
+        [
+          0.6999999284744263,
+          1.4600000381469727,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "incline-near-rail",
+      "meshName": "incline_near_rail",
+      "sourceName": "incline_near_rail",
+      "sourceNodeIndex": 15,
+      "sourcePath": "/TubeTransferStudy/incline_near_rail",
+      "title": "Incline near rail",
+      "description": "A longitudinal extrusion follows the conveyor profile.",
+      "center": [
+        -0.4699999988079071,
+        1.056999996304512,
+        0.397
+      ],
+      "bounds": [
+        [
+          -1.6399999856948853,
+          0.4790000021457672,
+          0.3649999984800816
+        ],
+        [
+          0.699999988079071,
+          1.6349999904632568,
+          0.42900000151991846
+        ]
+      ],
+      "triangles": 136,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.08,
+        0.35
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6399999856948853,
+          0.4790000021457672,
+          0.3649999984800816
+        ],
+        [
+          0.699999988079071,
+          1.6349999904632568,
+          0.42900000151991846
+        ]
+      ]
+    },
+    {
+      "id": "incline-near-slots",
+      "meshName": "incline_near_slots",
+      "sourceName": "incline_near_slots",
+      "sourceNodeIndex": 16,
+      "sourcePath": "/TubeTransferStudy/incline_near_slots",
+      "title": "Incline profile slots",
+      "description": "Two inset channels identify the sides of the extrusion.",
+      "center": [
+        -0.4700000286102295,
+        1.0530000030994415,
+        0.42490000010281803
+      ],
+      "bounds": [
+        [
+          -1.6399999856948853,
+          0.5209999680519104,
+          0.42459999968111517
+        ],
+        [
+          0.6999999284744263,
+          1.5850000381469727,
+          0.4252000005245209
+        ]
+      ],
+      "triangles": 152,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.08,
+        0.36
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6399999856948853,
+          0.5209999680519104,
+          0.42459999968111517
+        ],
+        [
+          0.6999999284744263,
+          1.5850000381469727,
+          0.4252000005245209
+        ]
+      ]
+    },
+    {
+      "id": "incline-near-guide",
+      "meshName": "incline_near_guide",
+      "sourceName": "incline_near_guide",
+      "sourceNodeIndex": 17,
+      "sourcePath": "/TubeTransferStudy/incline_near_guide",
+      "title": "Incline side guide",
+      "description": "A raised guide stands on either side of the moving tubes.",
+      "center": [
+        -0.4700000286102295,
+        1.1935000121593475,
+        0.3789999995343387
+      ],
+      "bounds": [
+        [
+          -1.6399999856948853,
+          0.6620000004768372,
+          0.370499999538064
+        ],
+        [
+          0.6999999284744263,
+          1.725000023841858,
+          0.3874999995306134
+        ]
+      ],
+      "triangles": 76,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0.1,
+        0.44
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6399999856948853,
+          0.6620000004768372,
+          0.370499999538064
+        ],
+        [
+          0.6999999284744263,
+          1.725000023841858,
+          0.3874999995306134
+        ]
+      ]
+    },
+    {
+      "id": "incline-near-clips",
+      "meshName": "incline_near_clips",
+      "sourceName": "incline_near_clips",
+      "sourceNodeIndex": 18,
+      "sourcePath": "/TubeTransferStudy/incline_near_clips",
+      "title": "Incline retaining clips",
+      "description": "Clips connect the guide to the extrusion.",
+      "center": [
+        -0.4699999988079071,
+        1.1545124053955078,
+        0.4399999976158142
+      ],
+      "bounds": [
+        [
+          -1.5053571462631226,
+          0.6133486032485962,
+          0.43299999833106995
+        ],
+        [
+          0.5653571486473083,
+          1.6956762075424194,
+          0.44699999690055847
+        ]
+      ],
+      "triangles": 756,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        0.54
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.5053571462631226,
+          0.6133486032485962,
+          0.43299999833106995
+        ],
+        [
+          0.5653571486473083,
+          1.6956762075424194,
+          0.44699999690055847
+        ]
+      ]
+    },
+    {
+      "id": "incline-near-bolts",
+      "meshName": "incline_near_bolts",
+      "sourceName": "incline_near_bolts",
+      "sourceNodeIndex": 19,
+      "sourcePath": "/TubeTransferStudy/incline_near_bolts",
+      "title": "Incline clip fasteners",
+      "description": "Example fastener locations for this study.",
+      "center": [
+        -0.4699999988079071,
+        1.1555123925209045,
+        0.45899999141693115
+      ],
+      "bounds": [
+        [
+          -1.4908571243286133,
+          0.629348635673523,
+          0.44999998807907104
+        ],
+        [
+          0.5508571267127991,
+          1.6816761493682861,
+          0.46799999475479126
+        ]
+      ],
+      "triangles": 3808,
+      "sourceMaterial": "polished",
+      "finishFamily": "polished",
+      "explode": [
+        0,
+        0,
+        0.62
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.4908571243286133,
+          0.629348635673523,
+          0.44999998807907104
+        ],
+        [
+          0.5508571267127991,
+          1.6816761493682861,
+          0.46799999475479126
+        ]
+      ]
+    },
+    {
+      "id": "incline-far-rail",
+      "meshName": "incline_far_rail",
+      "sourceName": "incline_far_rail",
+      "sourceNodeIndex": 20,
+      "sourcePath": "/TubeTransferStudy/incline_far_rail",
+      "title": "Incline far rail",
+      "description": "A longitudinal extrusion follows the conveyor profile.",
+      "center": [
+        -0.4699999988079071,
+        1.056999996304512,
+        -0.397
+      ],
+      "bounds": [
+        [
+          -1.6399999856948853,
+          0.4790000021457672,
+          -0.42900000151991846
+        ],
+        [
+          0.699999988079071,
+          1.6349999904632568,
+          -0.3649999984800816
+        ]
+      ],
+      "triangles": 136,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.08,
+        -0.35
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6399999856948853,
+          0.4790000021457672,
+          -0.42900000151991846
+        ],
+        [
+          0.699999988079071,
+          1.6349999904632568,
+          -0.3649999984800816
+        ]
+      ]
+    },
+    {
+      "id": "incline-far-slots",
+      "meshName": "incline_far_slots",
+      "sourceName": "incline_far_slots",
+      "sourceNodeIndex": 21,
+      "sourcePath": "/TubeTransferStudy/incline_far_slots",
+      "title": "Incline profile slots",
+      "description": "Two inset channels identify the sides of the extrusion.",
+      "center": [
+        -0.4700000286102295,
+        1.0530000030994415,
+        -0.42490000010281803
+      ],
+      "bounds": [
+        [
+          -1.6399999856948853,
+          0.5209999680519104,
+          -0.4252000005245209
+        ],
+        [
+          0.6999999284744263,
+          1.5850000381469727,
+          -0.42459999968111517
+        ]
+      ],
+      "triangles": 152,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.08,
+        -0.36
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6399999856948853,
+          0.5209999680519104,
+          -0.4252000005245209
+        ],
+        [
+          0.6999999284744263,
+          1.5850000381469727,
+          -0.42459999968111517
+        ]
+      ]
+    },
+    {
+      "id": "incline-far-guide",
+      "meshName": "incline_far_guide",
+      "sourceName": "incline_far_guide",
+      "sourceNodeIndex": 22,
+      "sourcePath": "/TubeTransferStudy/incline_far_guide",
+      "title": "Incline side guide",
+      "description": "A raised guide stands on either side of the moving tubes.",
+      "center": [
+        -0.4700000286102295,
+        1.2209999859333038,
+        -0.3790000004656613
+      ],
+      "bounds": [
+        [
+          -1.6399999856948853,
+          0.6620000004768372,
+          -0.387500000461936
+        ],
+        [
+          0.6999999284744263,
+          1.7799999713897705,
+          -0.3705000004693866
+        ]
+      ],
+      "triangles": 76,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0.1,
+        -0.44
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6399999856948853,
+          0.6620000004768372,
+          -0.387500000461936
+        ],
+        [
+          0.6999999284744263,
+          1.7799999713897705,
+          -0.3705000004693866
+        ]
+      ]
+    },
+    {
+      "id": "incline-far-clips",
+      "meshName": "incline_far_clips",
+      "sourceName": "incline_far_clips",
+      "sourceNodeIndex": 23,
+      "sourcePath": "/TubeTransferStudy/incline_far_clips",
+      "title": "Incline retaining clips",
+      "description": "Clips connect the guide to the extrusion.",
+      "center": [
+        -0.4699999988079071,
+        1.1545124053955078,
+        -0.4399999976158142
+      ],
+      "bounds": [
+        [
+          -1.5053571462631226,
+          0.6133486032485962,
+          -0.44699999690055847
+        ],
+        [
+          0.5653571486473083,
+          1.6956762075424194,
+          -0.43299999833106995
+        ]
+      ],
+      "triangles": 756,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        -0.54
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.5053571462631226,
+          0.6133486032485962,
+          -0.44699999690055847
+        ],
+        [
+          0.5653571486473083,
+          1.6956762075424194,
+          -0.43299999833106995
+        ]
+      ]
+    },
+    {
+      "id": "incline-far-bolts",
+      "meshName": "incline_far_bolts",
+      "sourceName": "incline_far_bolts",
+      "sourceNodeIndex": 24,
+      "sourcePath": "/TubeTransferStudy/incline_far_bolts",
+      "title": "Incline clip fasteners",
+      "description": "Example fastener locations for this study.",
+      "center": [
+        -0.4699999988079071,
+        1.1555123925209045,
+        -0.45899999141693115
+      ],
+      "bounds": [
+        [
+          -1.4908571243286133,
+          0.629348635673523,
+          -0.46799999475479126
+        ],
+        [
+          0.5508571267127991,
+          1.6816761493682861,
+          -0.44999998807907104
+        ]
+      ],
+      "triangles": 3808,
+      "sourceMaterial": "polished",
+      "finishFamily": "polished",
+      "explode": [
+        0,
+        0,
+        -0.62
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.4908571243286133,
+          0.629348635673523,
+          -0.46799999475479126
+        ],
+        [
+          0.5508571267127991,
+          1.6816761493682861,
+          -0.44999998807907104
+        ]
+      ]
+    },
+    {
+      "id": "upper-belt",
+      "meshName": "upper_belt",
+      "sourceName": "upper_belt",
+      "sourceNodeIndex": 25,
+      "sourcePath": "/TubeTransferStudy/upper_belt",
+      "title": "Upper belt",
+      "description": "The dark carrying surface runs between the guide rails.",
+      "center": [
+        1.475000023841858,
+        1.6324999928474426,
+        0
+      ],
+      "bounds": [
+        [
+          0.7000000476837158,
+          1.6150000095367432,
+          -0.36000001430511475
+        ],
+        [
+          2.25,
+          1.649999976158142,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 28,
+      "sourceMaterial": "polymer",
+      "finishFamily": "polymer",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.7000000476837158,
+          1.6150000095367432,
+          -0.36000001430511475
+        ],
+        [
+          2.25,
+          1.649999976158142,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "upper-return",
+      "meshName": "upper_return",
+      "sourceName": "upper_return",
+      "sourceNodeIndex": 26,
+      "sourcePath": "/TubeTransferStudy/upper_return",
+      "title": "Upper return strand",
+      "description": "The lower strand shows the illustrative return path.",
+      "center": [
+        1.475000023841858,
+        1.444000005722046,
+        0
+      ],
+      "bounds": [
+        [
+          0.7000000476837158,
+          1.4279999732971191,
+          -0.36000001430511475
+        ],
+        [
+          2.25,
+          1.4600000381469727,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 28,
+      "sourceMaterial": "polymer",
+      "finishFamily": "polymer",
+      "explode": [
+        0,
+        -0.24,
+        0
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.7000000476837158,
+          1.4279999732971191,
+          -0.36000001430511475
+        ],
+        [
+          2.25,
+          1.4600000381469727,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "upper-near-rail",
+      "meshName": "upper_near_rail",
+      "sourceName": "upper_near_rail",
+      "sourceNodeIndex": 27,
+      "sourcePath": "/TubeTransferStudy/upper_near_rail",
+      "title": "Upper near rail",
+      "description": "A longitudinal extrusion follows the conveyor profile.",
+      "center": [
+        1.4749999940395355,
+        1.5450000166893005,
+        0.397
+      ],
+      "bounds": [
+        [
+          0.699999988079071,
+          1.4550000429153442,
+          0.3649999984800816
+        ],
+        [
+          2.25,
+          1.6349999904632568,
+          0.42900000151991846
+        ]
+      ],
+      "triangles": 52,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.08,
+        0.35
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.699999988079071,
+          1.4550000429153442,
+          0.3649999984800816
+        ],
+        [
+          2.25,
+          1.6349999904632568,
+          0.42900000151991846
+        ]
+      ]
+    },
+    {
+      "id": "upper-near-slots",
+      "meshName": "upper_near_slots",
+      "sourceName": "upper_near_slots",
+      "sourceNodeIndex": 28,
+      "sourcePath": "/TubeTransferStudy/upper_near_slots",
+      "title": "Upper profile slots",
+      "description": "Two inset channels identify the sides of the extrusion.",
+      "center": [
+        1.475000023841858,
+        1.5410000085830688,
+        0.42490000010281803
+      ],
+      "bounds": [
+        [
+          0.7000000476837158,
+          1.496999979019165,
+          0.42459999968111517
+        ],
+        [
+          2.25,
+          1.5850000381469727,
+          0.4252000005245209
+        ]
+      ],
+      "triangles": 56,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.08,
+        0.36
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.7000000476837158,
+          1.496999979019165,
+          0.42459999968111517
+        ],
+        [
+          2.25,
+          1.5850000381469727,
+          0.4252000005245209
+        ]
+      ]
+    },
+    {
+      "id": "upper-near-guide",
+      "meshName": "upper_near_guide",
+      "sourceName": "upper_near_guide",
+      "sourceNodeIndex": 29,
+      "sourcePath": "/TubeTransferStudy/upper_near_guide",
+      "title": "Upper side guide",
+      "description": "A raised guide stands on either side of the moving tubes.",
+      "center": [
+        1.475000023841858,
+        1.6815000176429749,
+        0.3789999995343387
+      ],
+      "bounds": [
+        [
+          0.7000000476837158,
+          1.6380000114440918,
+          0.370499999538064
+        ],
+        [
+          2.25,
+          1.725000023841858,
+          0.3874999995306134
+        ]
+      ],
+      "triangles": 28,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0.1,
+        0.44
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.7000000476837158,
+          1.6380000114440918,
+          0.370499999538064
+        ],
+        [
+          2.25,
+          1.725000023841858,
+          0.3874999995306134
+        ]
+      ]
+    },
+    {
+      "id": "upper-near-clips",
+      "meshName": "upper_near_clips",
+      "sourceName": "upper_near_clips",
+      "sourceNodeIndex": 30,
+      "sourcePath": "/TubeTransferStudy/upper_near_clips",
+      "title": "Upper retaining clips",
+      "description": "Clips connect the guide to the extrusion.",
+      "center": [
+        1.475000023841858,
+        1.6220000386238098,
+        0.4399999976158142
+      ],
+      "bounds": [
+        [
+          0.8224999904632568,
+          1.5260000228881836,
+          0.43299999833106995
+        ],
+        [
+          2.127500057220459,
+          1.718000054359436,
+          0.44699999690055847
+        ]
+      ],
+      "triangles": 540,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        0.54
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.8224999904632568,
+          1.5260000228881836,
+          0.43299999833106995
+        ],
+        [
+          2.127500057220459,
+          1.718000054359436,
+          0.44699999690055847
+        ]
+      ]
+    },
+    {
+      "id": "upper-near-bolts",
+      "meshName": "upper_near_bolts",
+      "sourceName": "upper_near_bolts",
+      "sourceNodeIndex": 31,
+      "sourcePath": "/TubeTransferStudy/upper_near_bolts",
+      "title": "Upper clip fasteners",
+      "description": "Example fastener locations for this study.",
+      "center": [
+        1.4749999642372131,
+        1.6230000257492065,
+        0.45899999141693115
+      ],
+      "bounds": [
+        [
+          0.8370000123977661,
+          1.5420000553131104,
+          0.44999998807907104
+        ],
+        [
+          2.11299991607666,
+          1.7039999961853027,
+          0.46799999475479126
+        ]
+      ],
+      "triangles": 2720,
+      "sourceMaterial": "polished",
+      "finishFamily": "polished",
+      "explode": [
+        0,
+        0,
+        0.62
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.8370000123977661,
+          1.5420000553131104,
+          0.44999998807907104
+        ],
+        [
+          2.11299991607666,
+          1.7039999961853027,
+          0.46799999475479126
+        ]
+      ]
+    },
+    {
+      "id": "upper-far-rail",
+      "meshName": "upper_far_rail",
+      "sourceName": "upper_far_rail",
+      "sourceNodeIndex": 32,
+      "sourcePath": "/TubeTransferStudy/upper_far_rail",
+      "title": "Upper far rail",
+      "description": "A longitudinal extrusion follows the conveyor profile.",
+      "center": [
+        1.4749999940395355,
+        1.5450000166893005,
+        -0.397
+      ],
+      "bounds": [
+        [
+          0.699999988079071,
+          1.4550000429153442,
+          -0.42900000151991846
+        ],
+        [
+          2.25,
+          1.6349999904632568,
+          -0.3649999984800816
+        ]
+      ],
+      "triangles": 52,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.08,
+        -0.35
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.699999988079071,
+          1.4550000429153442,
+          -0.42900000151991846
+        ],
+        [
+          2.25,
+          1.6349999904632568,
+          -0.3649999984800816
+        ]
+      ]
+    },
+    {
+      "id": "upper-far-slots",
+      "meshName": "upper_far_slots",
+      "sourceName": "upper_far_slots",
+      "sourceNodeIndex": 33,
+      "sourcePath": "/TubeTransferStudy/upper_far_slots",
+      "title": "Upper profile slots",
+      "description": "Two inset channels identify the sides of the extrusion.",
+      "center": [
+        1.475000023841858,
+        1.5410000085830688,
+        -0.42490000010281803
+      ],
+      "bounds": [
+        [
+          0.7000000476837158,
+          1.496999979019165,
+          -0.4252000005245209
+        ],
+        [
+          2.25,
+          1.5850000381469727,
+          -0.42459999968111517
+        ]
+      ],
+      "triangles": 56,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.08,
+        -0.36
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.7000000476837158,
+          1.496999979019165,
+          -0.4252000005245209
+        ],
+        [
+          2.25,
+          1.5850000381469727,
+          -0.42459999968111517
+        ]
+      ]
+    },
+    {
+      "id": "upper-far-guide",
+      "meshName": "upper_far_guide",
+      "sourceName": "upper_far_guide",
+      "sourceNodeIndex": 34,
+      "sourcePath": "/TubeTransferStudy/upper_far_guide",
+      "title": "Upper side guide",
+      "description": "A raised guide stands on either side of the moving tubes.",
+      "center": [
+        1.475000023841858,
+        1.7089999914169312,
+        -0.3790000004656613
+      ],
+      "bounds": [
+        [
+          0.7000000476837158,
+          1.6380000114440918,
+          -0.387500000461936
+        ],
+        [
+          2.25,
+          1.7799999713897705,
+          -0.3705000004693866
+        ]
+      ],
+      "triangles": 28,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0.1,
+        -0.44
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.7000000476837158,
+          1.6380000114440918,
+          -0.387500000461936
+        ],
+        [
+          2.25,
+          1.7799999713897705,
+          -0.3705000004693866
+        ]
+      ]
+    },
+    {
+      "id": "upper-far-clips",
+      "meshName": "upper_far_clips",
+      "sourceName": "upper_far_clips",
+      "sourceNodeIndex": 35,
+      "sourcePath": "/TubeTransferStudy/upper_far_clips",
+      "title": "Upper retaining clips",
+      "description": "Clips connect the guide to the extrusion.",
+      "center": [
+        1.475000023841858,
+        1.6220000386238098,
+        -0.4399999976158142
+      ],
+      "bounds": [
+        [
+          0.8224999904632568,
+          1.5260000228881836,
+          -0.44699999690055847
+        ],
+        [
+          2.127500057220459,
+          1.718000054359436,
+          -0.43299999833106995
+        ]
+      ],
+      "triangles": 540,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        -0.54
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.8224999904632568,
+          1.5260000228881836,
+          -0.44699999690055847
+        ],
+        [
+          2.127500057220459,
+          1.718000054359436,
+          -0.43299999833106995
+        ]
+      ]
+    },
+    {
+      "id": "upper-far-bolts",
+      "meshName": "upper_far_bolts",
+      "sourceName": "upper_far_bolts",
+      "sourceNodeIndex": 36,
+      "sourcePath": "/TubeTransferStudy/upper_far_bolts",
+      "title": "Upper clip fasteners",
+      "description": "Example fastener locations for this study.",
+      "center": [
+        1.4749999642372131,
+        1.6230000257492065,
+        -0.45899999141693115
+      ],
+      "bounds": [
+        [
+          0.8370000123977661,
+          1.5420000553131104,
+          -0.46799999475479126
+        ],
+        [
+          2.11299991607666,
+          1.7039999961853027,
+          -0.44999998807907104
+        ]
+      ],
+      "triangles": 2720,
+      "sourceMaterial": "polished",
+      "finishFamily": "polished",
+      "explode": [
+        0,
+        0,
+        -0.62
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.8370000123977661,
+          1.5420000553131104,
+          -0.46799999475479126
+        ],
+        [
+          2.11299991607666,
+          1.7039999961853027,
+          -0.44999998807907104
+        ]
+      ]
+    },
+    {
+      "id": "flight-1",
+      "meshName": "flight_1",
+      "sourceName": "flight_1",
+      "sourceNodeIndex": 37,
+      "sourcePath": "/TubeTransferStudy/flight_1",
+      "title": "Carrier flight 1",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -2.218690319932014,
+        0.6855000004284084,
+        0
+      ],
+      "bounds": [
+        [
+          -2.246690320796281,
+          0.6600000004395843,
+          -0.33000001311302185
+        ],
+        [
+          -2.1906903190677465,
+          0.7110000004172325,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.246690209954977,
+          0.6599999880418181,
+          -0.33000001311302185
+        ],
+        [
+          -1.8964429385960102,
+          0.7109999880194664,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-2",
+      "meshName": "flight_2",
+      "sourceName": "flight_2",
+      "sourceNodeIndex": 38,
+      "sourcePath": "/TubeTransferStudy/flight_2",
+      "title": "Carrier flight 2",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -1.924442980568367,
+        0.6855000004284084,
+        0
+      ],
+      "bounds": [
+        [
+          -1.9524429814326343,
+          0.6600000004395843,
+          -0.33000001311302185
+        ],
+        [
+          -1.8964429797040996,
+          0.7110000004172325,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.952442940324545,
+          0.6557032176792166,
+          -0.33000001311302185
+        ],
+        [
+          -1.6052385177647843,
+          0.7343032838775366,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-3",
+      "meshName": "flight_3",
+      "sourceName": "flight_3",
+      "sourceNodeIndex": 39,
+      "sourcePath": "/TubeTransferStudy/flight_3",
+      "title": "Carrier flight 3",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -1.6400905026566075,
+        0.7009850901521097,
+        0
+      ],
+      "bounds": [
+        [
+          -1.6749424732774767,
+          0.6676668898974267,
+          -0.33000001311302185
+        ],
+        [
+          -1.6052385320357383,
+          0.7343032904067928,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.6749424588216297,
+          0.6676668836172664,
+          -0.33000001311302185
+        ],
+        [
+          -1.3342225053152292,
+          0.8465876134735155,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-4",
+      "meshName": "flight_4",
+      "sourceName": "flight_4",
+      "sourceNodeIndex": 40,
+      "sourcePath": "/TubeTransferStudy/flight_4",
+      "title": "Carrier flight 4",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -1.37024837290635,
+        0.8118078180387656,
+        0
+      ],
+      "bounds": [
+        [
+          -1.4062742228344596,
+          0.7770280314309572,
+          -0.33000001311302185
+        ],
+        [
+          -1.33422252297824,
+          0.8465876046465738,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.406274205439071,
+          0.7770280399887528,
+          -0.33000001311302185
+        ],
+        [
+          -1.0661786296209543,
+          0.9679712208610582,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-5",
+      "meshName": "flight_5",
+      "sourceName": "flight_5",
+      "sourceNodeIndex": 41,
+      "sourcePath": "/TubeTransferStudy/flight_5",
+      "title": "Carrier flight 5",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -1.1022044985164778,
+        0.933191417114801,
+        0
+      ],
+      "bounds": [
+        [
+          -1.1382303484445875,
+          0.8984116305069927,
+          -0.33000001311302185
+        ],
+        [
+          -1.066178648588368,
+          0.9679712037226093,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.138230329744796,
+          0.8984116473762955,
+          -0.33000001311302185
+        ],
+        [
+          -0.7981347539266794,
+          1.089354828248601,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-6",
+      "meshName": "flight_6",
+      "sourceName": "flight_6",
+      "sourceNodeIndex": 42,
+      "sourcePath": "/TubeTransferStudy/flight_6",
+      "title": "Carrier flight 6",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -0.8341606241266074,
+        1.0545750161908356,
+        0
+      ],
+      "bounds": [
+        [
+          -0.8701864740547172,
+          1.0197952295830273,
+          -0.33000001311302185
+        ],
+        [
+          -0.7981347741984977,
+          1.0893548027986437,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.8701864540505211,
+          1.0197952547638383,
+          -0.33000001311302185
+        ],
+        [
+          -0.5300908782324045,
+          1.210738376031499,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-7",
+      "meshName": "flight_7",
+      "sourceName": "flight_7",
+      "sourceNodeIndex": 43,
+      "sourcePath": "/TubeTransferStudy/flight_7",
+      "title": "Carrier flight 7",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -0.5661167497367353,
+        1.1759586152668708,
+        0
+      ],
+      "bounds": [
+        [
+          -0.6021425996648451,
+          1.1411788286590625,
+          -0.33000001311302185
+        ],
+        [
+          -0.5300908998086256,
+          1.210738401874679,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.6021425783562462,
+          1.1411788025467362,
+          -0.33000001311302185
+        ],
+        [
+          -0.262047032340452,
+          1.3321220430236864,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-8",
+      "meshName": "flight_8",
+      "sourceName": "flight_8",
+      "sourceNodeIndex": 44,
+      "sourcePath": "/TubeTransferStudy/flight_8",
+      "title": "Carrier flight 8",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -0.298072875346865,
+        1.2973422143429052,
+        0
+      ],
+      "bounds": [
+        [
+          -0.33409872527497475,
+          1.262562427735097,
+          -0.33000001311302185
+        ],
+        [
+          -0.26204702541875524,
+          1.3321220009507135,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.3340987324642936,
+          1.2625624695389237,
+          -0.33000001311302185
+        ],
+        [
+          0.005996848941758358,
+          1.4535055908065844,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-9",
+      "meshName": "flight_9",
+      "sourceName": "flight_9",
+      "sourceNodeIndex": 45,
+      "sourcePath": "/TubeTransferStudy/flight_9",
+      "title": "Carrier flight 9",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -0.03002900095699292,
+        1.4187258134189404,
+        0
+      ],
+      "bounds": [
+        [
+          -0.06605485088510266,
+          1.3839460268111323,
+          -0.33000001311302185
+        ],
+        [
+          0.005996848971116818,
+          1.4535056000267488,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.06605485118208326,
+          1.3839460173218217,
+          -0.33000001311302185
+        ],
+        [
+          0.2740407190480978,
+          1.5748892577987719,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-10",
+      "meshName": "flight_10",
+      "sourceName": "flight_10",
+      "sourceNodeIndex": 46,
+      "sourcePath": "/TubeTransferStudy/flight_10",
+      "title": "Carrier flight 10",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        0.23801487343287764,
+        1.5401094124949752,
+        0
+      ],
+      "bounds": [
+        [
+          0.2019890235047679,
+          1.5053296258871671,
+          -0.33000001311302185
+        ],
+        [
+          0.2740407233609874,
+          1.5748891991027836,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.2019890189242562,
+          1.5053296843140092,
+          -0.33000001311302185
+        ],
+        [
+          0.5486249330623917,
+          1.6812703859767082,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-11",
+      "meshName": "flight_11",
+      "sourceName": "flight_11",
+      "sourceNodeIndex": 47,
+      "sourcePath": "/TubeTransferStudy/flight_11",
+      "title": "Carrier flight 11",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        0.5143790717597143,
+        1.6486817102285518,
+        0
+      ],
+      "bounds": [
+        [
+          0.48013320919913327,
+          1.61609300887581,
+          -0.33000001311302185
+        ],
+        [
+          0.5486249343202952,
+          1.6812704115812935,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.48013320773589097,
+          1.6160929830112751,
+          -0.33000001311302185
+        ],
+        [
+          0.8416511528193951,
+          1.70313020182812,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-12",
+      "meshName": "flight_12",
+      "sourceName": "flight_12",
+      "sourceNodeIndex": 48,
+      "sourcePath": "/TubeTransferStudy/flight_12",
+      "title": "Carrier flight 12",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        0.8136511503209103,
+        1.6755000004284082,
+        0
+      ],
+      "bounds": [
+        [
+          0.7856511494566429,
+          1.650000000439584,
+          -0.33000001311302185
+        ],
+        [
+          0.8416511511851776,
+          1.7010000004172323,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.7856511510908604,
+          1.6499999975785613,
+          -0.33000001311302185
+        ],
+        [
+          1.1358985416591167,
+          1.7009999975562098,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-13",
+      "meshName": "flight_13",
+      "sourceName": "flight_13",
+      "sourceNodeIndex": 49,
+      "sourcePath": "/TubeTransferStudy/flight_13",
+      "title": "Carrier flight 13",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        1.1078984896845572,
+        1.6755000004284082,
+        0
+      ],
+      "bounds": [
+        [
+          1.0798984888202898,
+          1.650000000439584,
+          -0.33000001311302185
+        ],
+        [
+          1.1358984905488245,
+          1.7010000004172323,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.079898539930582,
+          1.6499999975785613,
+          -0.33000001311302185
+        ],
+        [
+          1.4301458112895489,
+          1.7009999975562098,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-14",
+      "meshName": "flight_14",
+      "sourceName": "flight_14",
+      "sourceNodeIndex": 50,
+      "sourcePath": "/TubeTransferStudy/flight_14",
+      "title": "Carrier flight 14",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        1.4021458290482043,
+        1.6755000004284082,
+        0
+      ],
+      "bounds": [
+        [
+          1.374145828183937,
+          1.650000000439584,
+          -0.33000001311302185
+        ],
+        [
+          1.4301458299124716,
+          1.7010000004172323,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.3741458095610142,
+          1.6499999975785613,
+          -0.33000001311302185
+        ],
+        [
+          1.7243932001292706,
+          1.7009999975562098,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-15",
+      "meshName": "flight_15",
+      "sourceName": "flight_15",
+      "sourceNodeIndex": 51,
+      "sourcePath": "/TubeTransferStudy/flight_15",
+      "title": "Carrier flight 15",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        1.696393168411851,
+        1.6755000004284082,
+        0
+      ],
+      "bounds": [
+        [
+          1.6683931675475836,
+          1.650000000439584,
+          -0.33000001311302185
+        ],
+        [
+          1.7243931692761183,
+          1.7010000004172323,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.6683931984007359,
+          1.6499999975785613,
+          -0.33000001311302185
+        ],
+        [
+          2.0186404697597027,
+          1.7009999975562098,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-16",
+      "meshName": "flight_16",
+      "sourceName": "flight_16",
+      "sourceNodeIndex": 52,
+      "sourcePath": "/TubeTransferStudy/flight_16",
+      "title": "Carrier flight 16",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        1.9906405077754963,
+        1.6755000004284082,
+        0
+      ],
+      "bounds": [
+        [
+          1.962640506911229,
+          1.650000000439584,
+          -0.33000001311302185
+        ],
+        [
+          2.0186405086397636,
+          1.7010000004172323,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.962640468031168,
+          1.6338737541818356,
+          -0.33000001311302185
+        ],
+        [
+          2.3272629653354766,
+          1.7053666395122855,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-17",
+      "meshName": "flight_17",
+      "sourceName": "flight_17",
+      "sourceNodeIndex": 53,
+      "sourcePath": "/TubeTransferStudy/flight_17",
+      "title": "Carrier flight 17",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        2.2924121958018664,
+        1.667190560764296,
+        0
+      ],
+      "bounds": [
+        [
+          2.257561345661299,
+          1.6338737218317876,
+          -0.33000001311302185
+        ],
+        [
+          2.3272630459424337,
+          1.7005073996968048,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          2.1906902082264423,
+          1.407065680537416,
+          -0.33000001311302185
+        ],
+        [
+          2.4009573739785917,
+          1.7006835751279676,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-18",
+      "meshName": "flight_18",
+      "sourceName": "flight_18",
+      "sourceNodeIndex": 54,
+      "sourcePath": "/TubeTransferStudy/flight_18",
+      "title": "Carrier flight 18",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        2.2186903199320103,
+        1.4344999995715917,
+        0
+      ],
+      "bounds": [
+        [
+          2.190690319067743,
+          1.4089999995827676,
+          -0.33000001311302185
+        ],
+        [
+          2.2466903207962776,
+          1.4599999995604158,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.8964429385960102,
+          1.4090000167489052,
+          -0.33000001311302185
+        ],
+        [
+          2.246690209954977,
+          1.4600000167265537,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-19",
+      "meshName": "flight_19",
+      "sourceName": "flight_19",
+      "sourceNodeIndex": 55,
+      "sourcePath": "/TubeTransferStudy/flight_19",
+      "title": "Carrier flight 19",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        1.9244429805683634,
+        1.4344999995715917,
+        0
+      ],
+      "bounds": [
+        [
+          1.896442979704096,
+          1.4089999995827676,
+          -0.33000001311302185
+        ],
+        [
+          1.9524429814326307,
+          1.4599999995604158,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.602195668965578,
+          1.4090000167489052,
+          -0.33000001311302185
+        ],
+        [
+          1.952442940324545,
+          1.4600000167265537,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-20",
+      "meshName": "flight_20",
+      "sourceName": "flight_20",
+      "sourceNodeIndex": 56,
+      "sourcePath": "/TubeTransferStudy/flight_20",
+      "title": "Carrier flight 20",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        1.6301956412047165,
+        1.4344999995715917,
+        0
+      ],
+      "bounds": [
+        [
+          1.6021956403404491,
+          1.4089999995827676,
+          -0.33000001311302185
+        ],
+        [
+          1.6581956420689838,
+          1.4599999995604158,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.3079482801258564,
+          1.4090000167489052,
+          -0.33000001311302185
+        ],
+        [
+          1.6581956706941128,
+          1.4600000167265537,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-21",
+      "meshName": "flight_21",
+      "sourceName": "flight_21",
+      "sourceNodeIndex": 57,
+      "sourcePath": "/TubeTransferStudy/flight_21",
+      "title": "Carrier flight 21",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        1.3359483018410712,
+        1.4344999995715917,
+        0
+      ],
+      "bounds": [
+        [
+          1.3079483009768038,
+          1.4089999995827676,
+          -0.33000001311302185
+        ],
+        [
+          1.3639483027053385,
+          1.4599999995604158,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.0137010104954243,
+          1.4090000167489052,
+          -0.33000001311302185
+        ],
+        [
+          1.363948281854391,
+          1.4600000167265537,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-22",
+      "meshName": "flight_22",
+      "sourceName": "flight_22",
+      "sourceNodeIndex": 58,
+      "sourcePath": "/TubeTransferStudy/flight_22",
+      "title": "Carrier flight 22",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        1.041700962477426,
+        1.4344999995715917,
+        0
+      ],
+      "bounds": [
+        [
+          1.0137009616131587,
+          1.4089999995827676,
+          -0.33000001311302185
+        ],
+        [
+          1.0697009633416934,
+          1.4599999995604158,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.7194536216557026,
+          1.4090000167489052,
+          -0.33000001311302185
+        ],
+        [
+          1.069701012223959,
+          1.4600000167265537,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-23",
+      "meshName": "flight_23",
+      "sourceName": "flight_23",
+      "sourceNodeIndex": 59,
+      "sourcePath": "/TubeTransferStudy/flight_23",
+      "title": "Carrier flight 23",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        0.7474536231137792,
+        1.4344999995715917,
+        0
+      ],
+      "bounds": [
+        [
+          0.7194536222495118,
+          1.4089999995827676,
+          -0.33000001311302185
+        ],
+        [
+          0.7754536239780465,
+          1.4599999995604158,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0.12
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.4317974753134705,
+          1.3579257496112285,
+          -0.33000001311302185
+        ],
+        [
+          0.7754536233842373,
+          1.4631160794811735,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-24",
+      "meshName": "flight_24",
+      "sourceName": "flight_24",
+      "sourceNodeIndex": 60,
+      "sourcePath": "/TubeTransferStudy/flight_24",
+      "title": "Carrier flight 24",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        0.4660433353685739,
+        1.3905144946241232,
+        0
+      ],
+      "bounds": [
+        [
+          0.4317974728079929,
+          1.3579257932713815,
+          -0.33000001311302185
+        ],
+        [
+          0.5002891979291549,
+          1.423103195976865,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.16272518839849617,
+          1.2415633611181587,
+          -0.33000001311302185
+        ],
+        [
+          0.5002891983365626,
+          1.4231031504789144,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-25",
+      "meshName": "flight_25",
+      "sourceName": "flight_25",
+      "sourceNodeIndex": 61,
+      "sourcePath": "/TubeTransferStudy/flight_25",
+      "title": "Carrier flight 25",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        0.19875104173355512,
+        1.2763431314715854,
+        0
+      ],
+      "bounds": [
+        [
+          0.1627251918054454,
+          1.2415633448637773,
+          -0.33000001311302185
+        ],
+        [
+          0.23477689166166485,
+          1.3111229180793937,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.10531868729577873,
+          1.1201796941259712,
+          -0.33000001311302185
+        ],
+        [
+          0.2347768926018266,
+          1.3111229383181702,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-26",
+      "meshName": "flight_26",
+      "sourceName": "flight_26",
+      "sourceNodeIndex": 62,
+      "sourcePath": "/TubeTransferStudy/flight_26",
+      "title": "Carrier flight 26",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -0.06929283265631685,
+        1.1549595323955502,
+        0
+      ],
+      "bounds": [
+        [
+          -0.10531868258442657,
+          1.120179745787742,
+          -0.33000001311302185
+        ],
+        [
+          -0.03326698272820712,
+          1.1897393190033585,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.37336256299005366,
+          0.9987961463430733,
+          -0.33000001311302185
+        ],
+        [
+          -0.03326698309244831,
+          1.1897392713259827,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-27",
+      "meshName": "flight_27",
+      "sourceName": "flight_27",
+      "sourceNodeIndex": 63,
+      "sourcePath": "/TubeTransferStudy/flight_27",
+      "title": "Carrier flight 27",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -0.3373367070461857,
+        1.0335759333195165,
+        0
+      ],
+      "bounds": [
+        [
+          -0.3733625569742954,
+          0.9987961467117082,
+          -0.33000001311302185
+        ],
+        [
+          -0.3013108571180759,
+          1.0683557199273248,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.6414064088820062,
+          0.8774125389555306,
+          -0.33000001311302185
+        ],
+        [
+          -0.3013108587867232,
+          1.0683557235430847,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-28",
+      "meshName": "flight_28",
+      "sourceName": "flight_28",
+      "sourceNodeIndex": 64,
+      "sourcePath": "/TubeTransferStudy/flight_28",
+      "title": "Carrier flight 28",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -0.6053805814360577,
+        0.912192334243481,
+        0
+      ],
+      "bounds": [
+        [
+          -0.6414064313641674,
+          0.8774125476356728,
+          -0.33000001311302185
+        ],
+        [
+          -0.5693547315079479,
+          0.9469721208512893,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.9094502845762811,
+          0.7560289315679879,
+          -0.33000001311302185
+        ],
+        [
+          -0.5693547046786758,
+          0.9469721161555419,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-29",
+      "meshName": "flight_29",
+      "sourceName": "flight_29",
+      "sourceNodeIndex": 65,
+      "sourcePath": "/TubeTransferStudy/flight_29",
+      "title": "Carrier flight 29",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -0.8734244558259295,
+        0.7908087351674458,
+        0
+      ],
+      "bounds": [
+        [
+          -0.9094503057540393,
+          0.7560289485596375,
+          -0.33000001311302185
+        ],
+        [
+          -0.8373986058978198,
+          0.8255885217752541,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.1774942198752008,
+          0.6346453241804452,
+          -0.33000001311302185
+        ],
+        [
+          -0.8373985803729507,
+          0.8255885087679992,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-30",
+      "meshName": "flight_30",
+      "sourceName": "flight_30",
+      "sourceNodeIndex": 66,
+      "sourcePath": "/TubeTransferStudy/flight_30",
+      "title": "Carrier flight 30",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -1.1414683302158015,
+        0.6694251360914105,
+        0
+      ],
+      "bounds": [
+        [
+          -1.1774941801439112,
+          0.6346453494836023,
+          -0.33000001311302185
+        ],
+        [
+          -1.1054424802876917,
+          0.7042049226992189,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.4455380955694757,
+          0.5132617763975472,
+          -0.33000001311302185
+        ],
+        [
+          -1.1054425156718704,
+          0.7042049013804564,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-31",
+      "meshName": "flight_31",
+      "sourceName": "flight_31",
+      "sourceNodeIndex": 67,
+      "sourcePath": "/TubeTransferStudy/flight_31",
+      "title": "Carrier flight 31",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -1.4095122046056736,
+        0.5480415370153753,
+        0
+      ],
+      "bounds": [
+        [
+          -1.4455380545337833,
+          0.5132617504075669,
+          -0.33000001311302185
+        ],
+        [
+          -1.3734863546775637,
+          0.5828213236231835,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.7245438458343605,
+          0.42165643255207724,
+          -0.33000001311302185
+        ],
+        [
+          -1.3734863913661453,
+          0.5828213535975585,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-32",
+      "meshName": "flight_32",
+      "sourceName": "flight_32",
+      "sourceNodeIndex": 68,
+      "sourcePath": "/TubeTransferStudy/flight_32",
+      "title": "Carrier flight 32",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -1.6932788141430346,
+        0.45079227824220547,
+        0
+      ],
+      "bounds": [
+        [
+          -1.7245439039399137,
+          0.4216564239462858,
+          -0.33000001311302185
+        ],
+        [
+          -1.6620137243461555,
+          0.4799281325381251,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.0186404697597027,
+          0.4162168533489233,
+          -0.33000001311302185
+        ],
+        [
+          -1.66201367095972,
+          0.47992813677161983,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-33",
+      "meshName": "flight_33",
+      "sourceName": "flight_33",
+      "sourceNodeIndex": 69,
+      "sourcePath": "/TubeTransferStudy/flight_33",
+      "title": "Carrier flight 33",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -1.990640507775499,
+        0.44449999957159164,
+        0
+      ],
+      "bounds": [
+        [
+          -2.0186405086397663,
+          0.4189999995827675,
+          -0.33000001311302185
+        ],
+        [
+          -1.9626405069112316,
+          0.46999999956041577,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.327262965103816,
+          0.41463342532398784,
+          -0.33000001311302185
+        ],
+        [
+          -1.962640468031168,
+          0.4861262803599008,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "flight-34",
+      "meshName": "flight_34",
+      "sourceName": "flight_34",
+      "sourceNodeIndex": 70,
+      "sourcePath": "/TubeTransferStudy/flight_34",
+      "title": "Carrier flight 34",
+      "description": "One flight illustrates how a pocket separates neighboring pieces.",
+      "center": [
+        -2.292412195801868,
+        0.4528094392357046,
+        0
+      ],
+      "bounds": [
+        [
+          -2.3272630459424355,
+          0.41949260030319585,
+          -0.33000001311302185
+        ],
+        [
+          -2.257561345661301,
+          0.4861262781682133,
+          0.33000001311302185
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.27,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.400957374558014,
+          0.4193164675117364,
+          -0.33000001311302185
+        ],
+        [
+          -2.1906902082264423,
+          0.7129343246942336,
+          0.33000001311302185
+        ]
+      ]
+    },
+    {
+      "id": "tube-1",
+      "meshName": "tube_1",
+      "sourceName": "tube_1",
+      "sourceNodeIndex": 71,
+      "sourcePath": "/TubeTransferStudy/tube_1",
+      "title": "Example tube 1",
+      "description": "A hollow example part sits crosswise against a flight. The tube sizes and spacing are illustrative.",
+      "center": [
+        -1.8244429799127158,
+        0.7080000000000001,
+        0
+      ],
+      "bounds": [
+        [
+          -1.8714429783033903,
+          0.6610000016093255,
+          -0.2750000059604645
+        ],
+        [
+          -1.7774429815220412,
+          0.7549999983906747,
+          0.2750000059604645
+        ]
+      ],
+      "triangles": 2048,
+      "sourceMaterial": "tube",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.54,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.8714429810643196,
+          0.6550050912561464,
+          -0.2750000059604645
+        ],
+        [
+          -1.4932497303470842,
+          0.8151447613254317,
+          0.2750000059604645
+        ]
+      ]
+    },
+    {
+      "id": "tube-2",
+      "meshName": "tube_2",
+      "sourceName": "tube_2",
+      "sourceNodeIndex": 72,
+      "sourcePath": "/TubeTransferStudy/tube_2",
+      "title": "Example tube 2",
+      "description": "A hollow example part sits crosswise against a flight. The tube sizes and spacing are illustrative.",
+      "center": [
+        -1.0203915015337917,
+        0.9949399688108761,
+        0
+      ],
+      "bounds": [
+        [
+          -1.082594580976295,
+          0.932736889368373,
+          -0.2750000059604645
+        ],
+        [
+          -0.9581884220912885,
+          1.0571430482533792,
+          0.2750000059604645
+        ]
+      ],
+      "triangles": 2048,
+      "sourceMaterial": "tube",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.54,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.0825945439116784,
+          0.9327369032128029,
+          -0.2750000059604645
+        ],
+        [
+          -0.6901445684654884,
+          1.1785266699569055,
+          0.2750000059604645
+        ]
+      ]
+    },
+    {
+      "id": "tube-3",
+      "meshName": "tube_3",
+      "sourceName": "tube_3",
+      "sourceNodeIndex": 73,
+      "sourcePath": "/TubeTransferStudy/tube_3",
+      "title": "Example tube 3",
+      "description": "A hollow example part sits crosswise against a flight. The tube sizes and spacing are illustrative.",
+      "center": [
+        -0.21625987836417898,
+        1.3590907660389806,
+        0
+      ],
+      "bounds": [
+        [
+          -0.2784629578066822,
+          1.2968876865964774,
+          -0.2750000059604645
+        ],
+        [
+          -0.1540567989216758,
+          1.4212938454814839,
+          0.2750000059604645
+        ]
+      ],
+      "triangles": 2048,
+      "sourceMaterial": "tube",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.54,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -0.2784629615323372,
+          1.296887725375431,
+          -0.2750000059604645
+        ],
+        [
+          0.11398707724378779,
+          1.5426774325148889,
+          0.2750000059604645
+        ]
+      ]
+    },
+    {
+      "id": "tube-4",
+      "meshName": "tube_4",
+      "sourceName": "tube_4",
+      "sourceNodeIndex": 74,
+      "sourcePath": "/TubeTransferStudy/tube_4",
+      "title": "Example tube 4",
+      "description": "A hollow example part sits crosswise against a flight. The tube sizes and spacing are illustrative.",
+      "center": [
+        0.6150276166526735,
+        1.6897421646466475,
+        0
+      ],
+      "bounds": [
+        [
+          0.5635841956802895,
+          1.6382987436742635,
+          -0.2750000059604645
+        ],
+        [
+          0.6664710376250574,
+          1.7411855856190315,
+          0.2750000059604645
+        ]
+      ],
+      "triangles": 2048,
+      "sourceMaterial": "tube",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.54,
+        0
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.5635841853164587,
+          1.6382987863563452,
+          -0.2750000059604645
+        ],
+        [
+          0.9606511667370796,
+          1.7489932407099498,
+          0.2750000059604645
+        ]
+      ]
+    },
+    {
+      "id": "tube-5",
+      "meshName": "tube_5",
+      "sourceName": "tube_5",
+      "sourceNodeIndex": 75,
+      "sourcePath": "/TubeTransferStudy/tube_5",
+      "title": "Example tube 5",
+      "description": "A hollow example part sits crosswise against a flight. The tube sizes and spacing are illustrative.",
+      "center": [
+        1.5021458297038555,
+        1.698,
+        0
+      ],
+      "bounds": [
+        [
+          1.4551458313131809,
+          1.6510000016093254,
+          -0.2750000059604645
+        ],
+        [
+          1.54914582809453,
+          1.7449999983906745,
+          0.2750000059604645
+        ]
+      ],
+      "triangles": 2048,
+      "sourceMaterial": "tube",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0.54,
+        0
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.455145888030529,
+          1.650999955832958,
+          -0.2750000059604645
+        ],
+        [
+          1.8433931544423103,
+          1.7449999526143076,
+          0.2750000059604645
+        ]
+      ]
+    },
+    {
+      "id": "tail-belt-wrap",
+      "meshName": "tail_belt_wrap",
+      "sourceName": "tail_belt_wrap",
+      "sourceNodeIndex": 76,
+      "sourcePath": "/TubeTransferStudy/tail_belt_wrap",
+      "title": "Infeed belt wrap",
+      "description": "The belt wraps around the end roller and joins the return strand.",
+      "center": [
+        -2.2974999997019765,
+        0.5650000000000001,
+        0
+      ],
+      "bounds": [
+        [
+          -2.344999998807907,
+          0.47000000119209295,
+          -0.36000001430511475
+        ],
+        [
+          -2.2500000005960463,
+          0.6599999988079072,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 268,
+      "sourceMaterial": "polymer",
+      "finishFamily": "polymer",
+      "explode": [
+        -0.35,
+        0.05,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.344999998807907,
+          0.47000000119209295,
+          -0.36000001430511475
+        ],
+        [
+          -2.2500000005960463,
+          0.6599999988079072,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "tail-roller",
+      "meshName": "tail_roller",
+      "sourceName": "tail_roller",
+      "sourceNodeIndex": 77,
+      "sourcePath": "/TubeTransferStudy/tail_roller",
+      "title": "Infeed roller",
+      "description": "The roller indicates the end of the belt path.",
+      "center": [
+        -2.25,
+        0.5650000000000001,
+        0
+      ],
+      "bounds": [
+        [
+          -2.3250000029802322,
+          0.4899999970197678,
+          -0.36000001430511475
+        ],
+        [
+          -2.1749999970197678,
+          0.6400000029802323,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 384,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        -0.35,
+        0,
+        0
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.3250000029802322,
+          0.4899999970197678,
+          -0.36000001430511475
+        ],
+        [
+          -2.1749999970197678,
+          0.6400000029802323,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "tail-far-plate",
+      "meshName": "tail_far_plate",
+      "sourceName": "tail_far_plate",
+      "sourceNodeIndex": 78,
+      "sourcePath": "/TubeTransferStudy/tail_far_plate",
+      "title": "Far bearing cover",
+      "description": "An illustrative cheek plate locates the roller end.",
+      "center": [
+        -2.2519999966025352,
+        0.5620000013709069,
+        -0.412
+      ],
+      "bounds": [
+        [
+          -2.369999997317791,
+          0.46499999850988394,
+          -0.4250000002682209
+        ],
+        [
+          -2.1339999958872795,
+          0.6590000042319298,
+          -0.3989999997317791
+        ]
+      ],
+      "triangles": 52,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        -0.3
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.369999997317791,
+          0.46499999850988394,
+          -0.4250000002682209
+        ],
+        [
+          -2.1339999958872795,
+          0.6590000042319298,
+          -0.3989999997317791
+        ]
+      ]
+    },
+    {
+      "id": "tail-far-hub",
+      "meshName": "tail_far_hub",
+      "sourceName": "tail_far_hub",
+      "sourceNodeIndex": 79,
+      "sourcePath": "/TubeTransferStudy/tail_far_hub",
+      "title": "Far roller hub",
+      "description": "The cap marks the roller axis.",
+      "center": [
+        -2.25,
+        0.5650000000000001,
+        -0.443
+      ],
+      "bounds": [
+        [
+          -2.2950000017881393,
+          0.5199999982118607,
+          -0.45949999991059304
+        ],
+        [
+          -2.2049999982118607,
+          0.6100000017881394,
+          -0.42650000008940697
+        ]
+      ],
+      "triangles": 384,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        0,
+        -0.45
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.2950000017881393,
+          0.5199999982118607,
+          -0.45949999991059304
+        ],
+        [
+          -2.2049999982118607,
+          0.6100000017881394,
+          -0.42650000008940697
+        ]
+      ]
+    },
+    {
+      "id": "tail-near-plate",
+      "meshName": "tail_near_plate",
+      "sourceName": "tail_near_plate",
+      "sourceNodeIndex": 80,
+      "sourcePath": "/TubeTransferStudy/tail_near_plate",
+      "title": "Near bearing cover",
+      "description": "An illustrative cheek plate locates the roller end.",
+      "center": [
+        -2.2519999966025352,
+        0.5620000013709069,
+        0.412
+      ],
+      "bounds": [
+        [
+          -2.369999997317791,
+          0.46499999850988394,
+          0.3989999997317791
+        ],
+        [
+          -2.1339999958872795,
+          0.6590000042319298,
+          0.4250000002682209
+        ]
+      ],
+      "triangles": 52,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        0.3
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.369999997317791,
+          0.46499999850988394,
+          0.3989999997317791
+        ],
+        [
+          -2.1339999958872795,
+          0.6590000042319298,
+          0.4250000002682209
+        ]
+      ]
+    },
+    {
+      "id": "tail-near-hub",
+      "meshName": "tail_near_hub",
+      "sourceName": "tail_near_hub",
+      "sourceNodeIndex": 81,
+      "sourcePath": "/TubeTransferStudy/tail_near_hub",
+      "title": "Near roller hub",
+      "description": "The cap marks the roller axis.",
+      "center": [
+        -2.25,
+        0.5650000000000001,
+        0.443
+      ],
+      "bounds": [
+        [
+          -2.2950000017881393,
+          0.5199999982118607,
+          0.42650000008940697
+        ],
+        [
+          -2.2049999982118607,
+          0.6100000017881394,
+          0.45949999991059304
+        ]
+      ],
+      "triangles": 384,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        0,
+        0.45
+      ],
+      "group": "infeed",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.2950000017881393,
+          0.5199999982118607,
+          0.42650000008940697
+        ],
+        [
+          -2.2049999982118607,
+          0.6100000017881394,
+          0.45949999991059304
+        ]
+      ]
+    },
+    {
+      "id": "head-belt-wrap",
+      "meshName": "head_belt_wrap",
+      "sourceName": "head_belt_wrap",
+      "sourceNodeIndex": 82,
+      "sourcePath": "/TubeTransferStudy/head_belt_wrap",
+      "title": "Discharge belt wrap",
+      "description": "The belt wraps around the end roller and joins the return strand.",
+      "center": [
+        2.2974999997019765,
+        1.555,
+        0
+      ],
+      "bounds": [
+        [
+          2.2500000005960463,
+          1.4600000011920928,
+          -0.36000001430511475
+        ],
+        [
+          2.344999998807907,
+          1.649999998807907,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 268,
+      "sourceMaterial": "polymer",
+      "finishFamily": "polymer",
+      "explode": [
+        0.35,
+        0.05,
+        0
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          2.2500000005960463,
+          1.4600000011920928,
+          -0.36000001430511475
+        ],
+        [
+          2.344999998807907,
+          1.649999998807907,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "head-roller",
+      "meshName": "head_roller",
+      "sourceName": "head_roller",
+      "sourceNodeIndex": 83,
+      "sourcePath": "/TubeTransferStudy/head_roller",
+      "title": "Discharge roller",
+      "description": "The roller indicates the end of the belt path.",
+      "center": [
+        2.25,
+        1.555,
+        0
+      ],
+      "bounds": [
+        [
+          2.1749999970197678,
+          1.4799999970197677,
+          -0.36000001430511475
+        ],
+        [
+          2.3250000029802322,
+          1.6300000029802322,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 384,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0.4,
+        0,
+        0
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          2.1749999970197678,
+          1.4799999970197677,
+          -0.36000001430511475
+        ],
+        [
+          2.3250000029802322,
+          1.6300000029802322,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "head-far-plate",
+      "meshName": "head_far_plate",
+      "sourceName": "head_far_plate",
+      "sourceNodeIndex": 84,
+      "sourcePath": "/TubeTransferStudy/head_far_plate",
+      "title": "Far bearing cover",
+      "description": "An illustrative cheek plate locates the roller end.",
+      "center": [
+        2.2480000033974648,
+        1.5520000013709068,
+        -0.412
+      ],
+      "bounds": [
+        [
+          2.130000002682209,
+          1.4549999985098838,
+          -0.4250000002682209
+        ],
+        [
+          2.3660000041127205,
+          1.6490000042319297,
+          -0.3989999997317791
+        ]
+      ],
+      "triangles": 52,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        -0.3
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          2.130000002682209,
+          1.4549999985098838,
+          -0.4250000002682209
+        ],
+        [
+          2.3660000041127205,
+          1.6490000042319297,
+          -0.3989999997317791
+        ]
+      ]
+    },
+    {
+      "id": "head-far-hub",
+      "meshName": "head_far_hub",
+      "sourceName": "head_far_hub",
+      "sourceNodeIndex": 85,
+      "sourcePath": "/TubeTransferStudy/head_far_hub",
+      "title": "Far roller hub",
+      "description": "The cap marks the roller axis.",
+      "center": [
+        2.25,
+        1.555,
+        -0.443
+      ],
+      "bounds": [
+        [
+          2.2049999982118607,
+          1.5099999982118606,
+          -0.45949999991059304
+        ],
+        [
+          2.2950000017881393,
+          1.6000000017881393,
+          -0.42650000008940697
+        ]
+      ],
+      "triangles": 384,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        0,
+        -0.45
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          2.2049999982118607,
+          1.5099999982118606,
+          -0.45949999991059304
+        ],
+        [
+          2.2950000017881393,
+          1.6000000017881393,
+          -0.42650000008940697
+        ]
+      ]
+    },
+    {
+      "id": "head-near-plate",
+      "meshName": "head_near_plate",
+      "sourceName": "head_near_plate",
+      "sourceNodeIndex": 86,
+      "sourcePath": "/TubeTransferStudy/head_near_plate",
+      "title": "Near bearing cover",
+      "description": "An illustrative cheek plate locates the roller end.",
+      "center": [
+        2.2480000033974648,
+        1.5520000013709068,
+        0.412
+      ],
+      "bounds": [
+        [
+          2.130000002682209,
+          1.4549999985098838,
+          0.3989999997317791
+        ],
+        [
+          2.3660000041127205,
+          1.6490000042319297,
+          0.4250000002682209
+        ]
+      ],
+      "triangles": 52,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        0.3
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          2.130000002682209,
+          1.4549999985098838,
+          0.3989999997317791
+        ],
+        [
+          2.3660000041127205,
+          1.6490000042319297,
+          0.4250000002682209
+        ]
+      ]
+    },
+    {
+      "id": "head-near-hub",
+      "meshName": "head_near_hub",
+      "sourceName": "head_near_hub",
+      "sourceNodeIndex": 87,
+      "sourcePath": "/TubeTransferStudy/head_near_hub",
+      "title": "Near roller hub",
+      "description": "The cap marks the roller axis.",
+      "center": [
+        2.25,
+        1.555,
+        0.443
+      ],
+      "bounds": [
+        [
+          2.2049999982118607,
+          1.5099999982118606,
+          0.42650000008940697
+        ],
+        [
+          2.2950000017881393,
+          1.6000000017881393,
+          0.45949999991059304
+        ]
+      ],
+      "triangles": 384,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        0,
+        0.45
+      ],
+      "group": "discharge",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          2.2049999982118607,
+          1.5099999982118606,
+          0.42650000008940697
+        ],
+        [
+          2.2950000017881393,
+          1.6000000017881393,
+          0.45949999991059304
+        ]
+      ]
+    },
+    {
+      "id": "transition-cover",
+      "meshName": "transition_cover",
+      "sourceName": "transition_cover",
+      "sourceNodeIndex": 88,
+      "sourcePath": "/TubeTransferStudy/transition_cover",
+      "title": "Transition cover",
+      "description": "A guard spans the bend between incline and upper deck.",
+      "center": [
+        0.6800000011920929,
+        1.5799999988079072,
+        0.45
+      ],
+      "bounds": [
+        [
+          0.3900000095367432,
+          1.4299999928474427,
+          0.4374999998137355
+        ],
+        [
+          0.9699999928474426,
+          1.7300000047683717,
+          0.4625000001862645
+        ]
+      ],
+      "triangles": 52,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        0,
+        0.38
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.3900000095367432,
+          1.4299999928474427,
+          0.4374999998137355
+        ],
+        [
+          0.9699999928474426,
+          1.7300000047683717,
+          0.4625000001862645
+        ]
+      ]
+    },
+    {
+      "id": "nameplate",
+      "meshName": "nameplate",
+      "sourceName": "nameplate",
+      "sourceNodeIndex": 89,
+      "sourcePath": "/TubeTransferStudy/nameplate",
+      "title": "Identity plate",
+      "description": "The MK colors identify the application reference.",
+      "center": [
+        0.68,
+        1.592,
+        0.469
+      ],
+      "bounds": [
+        [
+          0.555,
+          1.4945000035762788,
+          0.4629999999478459
+        ],
+        [
+          0.805,
+          1.6894999964237214,
+          0.47500000005215404
+        ]
+      ],
+      "triangles": 108,
+      "sourceMaterial": "coatedWhite",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0,
+        0.49
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.555,
+          1.4945000035762788,
+          0.4629999999478459
+        ],
+        [
+          0.805,
+          1.6894999964237214,
+          0.47500000005215404
+        ]
+      ]
+    },
+    {
+      "id": "mk-red-ink",
+      "meshName": "mk_red_ink",
+      "sourceName": "mk_red_ink",
+      "sourceNodeIndex": 90,
+      "sourcePath": "/TubeTransferStudy/mk_red_ink",
+      "title": "MK red mark",
+      "description": "The colored mark follows the corresponding official MK vector outline.",
+      "center": [
+        0.7415898805260658,
+        1.5976145703196525,
+        0.4772600000244565
+      ],
+      "bounds": [
+        [
+          0.6980132898092269,
+          1.529229140639305,
+          0.4765
+        ],
+        [
+          0.7851664712429046,
+          1.666,
+          0.47802000004891304
+        ]
+      ],
+      "triangles": 52,
+      "sourceMaterial": "red",
+      "finishFamily": "indicator",
+      "explode": [
+        0,
+        0,
+        0.49
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.6980132898092269,
+          1.529229140639305,
+          0.4765
+        ],
+        [
+          0.7851664712429046,
+          1.666,
+          0.47802000004891304
+        ]
+      ]
+    },
+    {
+      "id": "mk-blue-ink",
+      "meshName": "mk_blue_ink",
+      "sourceName": "mk_blue_ink",
+      "sourceNodeIndex": 91,
+      "sourcePath": "/TubeTransferStudy/mk_blue_ink",
+      "title": "MK blue mark",
+      "description": "The colored mark follows the corresponding official MK vector outline.",
+      "center": [
+        0.6328860153657151,
+        1.5636968489587306,
+        0.4772600000244565
+      ],
+      "bounds": [
+        [
+          0.5743463729226496,
+          1.5291334453821182,
+          0.4765
+        ],
+        [
+          0.6914256578087806,
+          1.598260252535343,
+          0.47802000004891304
+        ]
+      ],
+      "triangles": 184,
+      "sourceMaterial": "blue",
+      "finishFamily": "coatedWhite",
+      "explode": [
+        0,
+        0,
+        0.49
+      ],
+      "group": "elevation",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.5743463729226496,
+          1.5291334453821182,
+          0.4765
+        ],
+        [
+          0.6914256578087806,
+          1.598260252535343,
+          0.47802000004891304
+        ]
+      ]
+    },
+    {
+      "id": "far-leg-1",
+      "meshName": "far_leg_1",
+      "sourceName": "far_leg_1",
+      "sourceNodeIndex": 92,
+      "sourcePath": "/TubeTransferStudy/far_leg_1",
+      "title": "Far upright 1",
+      "description": "A stand upright supports this conceptual layout.",
+      "center": [
+        -1.92,
+        0.28150000000000003,
+        -0.303
+      ],
+      "bounds": [
+        [
+          -1.9614999984204768,
+          0.09999999725818637,
+          -0.3444999984204769
+        ],
+        [
+          -1.878500001579523,
+          0.4630000027418137,
+          -0.2615000015795231
+        ]
+      ],
+      "triangles": 108,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.3,
+        -0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.9614999984204768,
+          0.09999999725818637,
+          -0.3444999984204769
+        ],
+        [
+          -1.878500001579523,
+          0.4630000027418137,
+          -0.2615000015795231
+        ]
+      ]
+    },
+    {
+      "id": "far-foot-1",
+      "meshName": "far_foot_1",
+      "sourceName": "far_foot_1",
+      "sourceNodeIndex": 93,
+      "sourcePath": "/TubeTransferStudy/far_foot_1",
+      "title": "Leveling foot 1 · far",
+      "description": "The adjustable foot marks the interface with the floor.",
+      "center": [
+        -1.92,
+        0.05225000152736902,
+        -0.303
+      ],
+      "bounds": [
+        [
+          -2.0020000022649764,
+          -1.0430813157658037e-10,
+          -0.3850000022649765
+        ],
+        [
+          -1.8379999977350234,
+          0.10450000315904617,
+          -0.2209999977350235
+        ]
+      ],
+      "triangles": 816,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.5,
+        -0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.0020000022649764,
+          -1.0430813157658037e-10,
+          -0.3850000022649765
+        ],
+        [
+          -1.8379999977350234,
+          0.10450000315904617,
+          -0.2209999977350235
+        ]
+      ]
+    },
+    {
+      "id": "far-leg-2",
+      "meshName": "far_leg_2",
+      "sourceName": "far_leg_2",
+      "sourceNodeIndex": 94,
+      "sourcePath": "/TubeTransferStudy/far_leg_2",
+      "title": "Far upright 2",
+      "description": "A stand upright supports this conceptual layout.",
+      "center": [
+        0.44,
+        0.7511000000000001,
+        -0.303
+      ],
+      "bounds": [
+        [
+          0.3985000015795231,
+          0.10000002012252807,
+          -0.3444999984204769
+        ],
+        [
+          0.4814999984204769,
+          1.402199979877472,
+          -0.2615000015795231
+        ]
+      ],
+      "triangles": 108,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.3,
+        -0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.3985000015795231,
+          0.10000002012252807,
+          -0.3444999984204769
+        ],
+        [
+          0.4814999984204769,
+          1.402199979877472,
+          -0.2615000015795231
+        ]
+      ]
+    },
+    {
+      "id": "far-foot-2",
+      "meshName": "far_foot_2",
+      "sourceName": "far_foot_2",
+      "sourceNodeIndex": 95,
+      "sourcePath": "/TubeTransferStudy/far_foot_2",
+      "title": "Leveling foot 2 · far",
+      "description": "The adjustable foot marks the interface with the floor.",
+      "center": [
+        0.43999999999999995,
+        0.05225000152736902,
+        -0.303
+      ],
+      "bounds": [
+        [
+          0.3579999977350235,
+          -1.0430813157658037e-10,
+          -0.3850000022649765
+        ],
+        [
+          0.5220000022649764,
+          0.10450000315904617,
+          -0.2209999977350235
+        ]
+      ],
+      "triangles": 816,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.5,
+        -0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.3579999977350235,
+          -1.0430813157658037e-10,
+          -0.3850000022649765
+        ],
+        [
+          0.5220000022649764,
+          0.10450000315904617,
+          -0.2209999977350235
+        ]
+      ]
+    },
+    {
+      "id": "far-leg-3",
+      "meshName": "far_leg_3",
+      "sourceName": "far_leg_3",
+      "sourceNodeIndex": 96,
+      "sourcePath": "/TubeTransferStudy/far_leg_3",
+      "title": "Far upright 3",
+      "description": "A stand upright supports this conceptual layout.",
+      "center": [
+        1.9,
+        0.7765,
+        -0.303
+      ],
+      "bounds": [
+        [
+          1.858500001579523,
+          0.09999997758865353,
+          -0.3444999984204769
+        ],
+        [
+          1.9414999984204768,
+          1.4530000224113464,
+          -0.2615000015795231
+        ]
+      ],
+      "triangles": 108,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.3,
+        -0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.858500001579523,
+          0.09999997758865353,
+          -0.3444999984204769
+        ],
+        [
+          1.9414999984204768,
+          1.4530000224113464,
+          -0.2615000015795231
+        ]
+      ]
+    },
+    {
+      "id": "far-foot-3",
+      "meshName": "far_foot_3",
+      "sourceName": "far_foot_3",
+      "sourceNodeIndex": 97,
+      "sourcePath": "/TubeTransferStudy/far_foot_3",
+      "title": "Leveling foot 3 · far",
+      "description": "The adjustable foot marks the interface with the floor.",
+      "center": [
+        1.9,
+        0.05225000152736902,
+        -0.303
+      ],
+      "bounds": [
+        [
+          1.8179999977350234,
+          -1.0430813157658037e-10,
+          -0.3850000022649765
+        ],
+        [
+          1.9820000022649764,
+          0.10450000315904617,
+          -0.2209999977350235
+        ]
+      ],
+      "triangles": 816,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.5,
+        -0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.8179999977350234,
+          -1.0430813157658037e-10,
+          -0.3850000022649765
+        ],
+        [
+          1.9820000022649764,
+          0.10450000315904617,
+          -0.2209999977350235
+        ]
+      ]
+    },
+    {
+      "id": "far-stand-braces",
+      "meshName": "far_stand_braces",
+      "sourceName": "far_stand_braces",
+      "sourceNodeIndex": 98,
+      "sourcePath": "/TubeTransferStudy/far_stand_braces",
+      "title": "Far diagonal braces",
+      "description": "Braces keep the relationship between the stand uprights visible.",
+      "center": [
+        -0.009541869163513184,
+        0.4150000140070915,
+        -0.30300000309944153
+      ],
+      "bounds": [
+        [
+          -1.92355477809906,
+          0.1607367843389511,
+          -0.3244999945163727
+        ],
+        [
+          1.9044710397720337,
+          0.6692632436752319,
+          -0.2815000116825104
+        ]
+      ],
+      "triangles": 216,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        -0.35,
+        -0.35
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.92355477809906,
+          0.1607367843389511,
+          -0.3244999945163727
+        ],
+        [
+          1.9044710397720337,
+          0.6692632436752319,
+          -0.2815000116825104
+        ]
+      ]
+    },
+    {
+      "id": "near-leg-1",
+      "meshName": "near_leg_1",
+      "sourceName": "near_leg_1",
+      "sourceNodeIndex": 99,
+      "sourcePath": "/TubeTransferStudy/near_leg_1",
+      "title": "Near upright 1",
+      "description": "A stand upright supports this conceptual layout.",
+      "center": [
+        -1.92,
+        0.28150000000000003,
+        0.303
+      ],
+      "bounds": [
+        [
+          -1.9614999984204768,
+          0.09999999725818637,
+          0.2615000015795231
+        ],
+        [
+          -1.878500001579523,
+          0.4630000027418137,
+          0.3444999984204769
+        ]
+      ],
+      "triangles": 108,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.3,
+        0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.9614999984204768,
+          0.09999999725818637,
+          0.2615000015795231
+        ],
+        [
+          -1.878500001579523,
+          0.4630000027418137,
+          0.3444999984204769
+        ]
+      ]
+    },
+    {
+      "id": "near-foot-1",
+      "meshName": "near_foot_1",
+      "sourceName": "near_foot_1",
+      "sourceNodeIndex": 100,
+      "sourcePath": "/TubeTransferStudy/near_foot_1",
+      "title": "Leveling foot 1 · near",
+      "description": "The adjustable foot marks the interface with the floor.",
+      "center": [
+        -1.92,
+        0.05225000152736902,
+        0.303
+      ],
+      "bounds": [
+        [
+          -2.0020000022649764,
+          -1.0430813157658037e-10,
+          0.2209999977350235
+        ],
+        [
+          -1.8379999977350234,
+          0.10450000315904617,
+          0.3850000022649765
+        ]
+      ],
+      "triangles": 816,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.5,
+        0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -2.0020000022649764,
+          -1.0430813157658037e-10,
+          0.2209999977350235
+        ],
+        [
+          -1.8379999977350234,
+          0.10450000315904617,
+          0.3850000022649765
+        ]
+      ]
+    },
+    {
+      "id": "near-leg-2",
+      "meshName": "near_leg_2",
+      "sourceName": "near_leg_2",
+      "sourceNodeIndex": 101,
+      "sourcePath": "/TubeTransferStudy/near_leg_2",
+      "title": "Near upright 2",
+      "description": "A stand upright supports this conceptual layout.",
+      "center": [
+        0.44,
+        0.7511000000000001,
+        0.303
+      ],
+      "bounds": [
+        [
+          0.3985000015795231,
+          0.10000002012252807,
+          0.2615000015795231
+        ],
+        [
+          0.4814999984204769,
+          1.402199979877472,
+          0.3444999984204769
+        ]
+      ],
+      "triangles": 108,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.3,
+        0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.3985000015795231,
+          0.10000002012252807,
+          0.2615000015795231
+        ],
+        [
+          0.4814999984204769,
+          1.402199979877472,
+          0.3444999984204769
+        ]
+      ]
+    },
+    {
+      "id": "near-foot-2",
+      "meshName": "near_foot_2",
+      "sourceName": "near_foot_2",
+      "sourceNodeIndex": 102,
+      "sourcePath": "/TubeTransferStudy/near_foot_2",
+      "title": "Leveling foot 2 · near",
+      "description": "The adjustable foot marks the interface with the floor.",
+      "center": [
+        0.43999999999999995,
+        0.05225000152736902,
+        0.303
+      ],
+      "bounds": [
+        [
+          0.3579999977350235,
+          -1.0430813157658037e-10,
+          0.2209999977350235
+        ],
+        [
+          0.5220000022649764,
+          0.10450000315904617,
+          0.3850000022649765
+        ]
+      ],
+      "triangles": 816,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.5,
+        0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          0.3579999977350235,
+          -1.0430813157658037e-10,
+          0.2209999977350235
+        ],
+        [
+          0.5220000022649764,
+          0.10450000315904617,
+          0.3850000022649765
+        ]
+      ]
+    },
+    {
+      "id": "near-leg-3",
+      "meshName": "near_leg_3",
+      "sourceName": "near_leg_3",
+      "sourceNodeIndex": 103,
+      "sourcePath": "/TubeTransferStudy/near_leg_3",
+      "title": "Near upright 3",
+      "description": "A stand upright supports this conceptual layout.",
+      "center": [
+        1.9,
+        0.7765,
+        0.303
+      ],
+      "bounds": [
+        [
+          1.858500001579523,
+          0.09999997758865353,
+          0.2615000015795231
+        ],
+        [
+          1.9414999984204768,
+          1.4530000224113464,
+          0.3444999984204769
+        ]
+      ],
+      "triangles": 108,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.3,
+        0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.858500001579523,
+          0.09999997758865353,
+          0.2615000015795231
+        ],
+        [
+          1.9414999984204768,
+          1.4530000224113464,
+          0.3444999984204769
+        ]
+      ]
+    },
+    {
+      "id": "near-foot-3",
+      "meshName": "near_foot_3",
+      "sourceName": "near_foot_3",
+      "sourceNodeIndex": 104,
+      "sourcePath": "/TubeTransferStudy/near_foot_3",
+      "title": "Leveling foot 3 · near",
+      "description": "The adjustable foot marks the interface with the floor.",
+      "center": [
+        1.9,
+        0.05225000152736902,
+        0.303
+      ],
+      "bounds": [
+        [
+          1.8179999977350234,
+          -1.0430813157658037e-10,
+          0.2209999977350235
+        ],
+        [
+          1.9820000022649764,
+          0.10450000315904617,
+          0.3850000022649765
+        ]
+      ],
+      "triangles": 816,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.5,
+        0.23
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.8179999977350234,
+          -1.0430813157658037e-10,
+          0.2209999977350235
+        ],
+        [
+          1.9820000022649764,
+          0.10450000315904617,
+          0.3850000022649765
+        ]
+      ]
+    },
+    {
+      "id": "near-stand-braces",
+      "meshName": "near_stand_braces",
+      "sourceName": "near_stand_braces",
+      "sourceNodeIndex": 105,
+      "sourcePath": "/TubeTransferStudy/near_stand_braces",
+      "title": "Near diagonal braces",
+      "description": "Braces keep the relationship between the stand uprights visible.",
+      "center": [
+        -0.009541869163513184,
+        0.4150000140070915,
+        0.30300000309944153
+      ],
+      "bounds": [
+        [
+          -1.92355477809906,
+          0.1607367843389511,
+          0.2815000116825104
+        ],
+        [
+          1.9044710397720337,
+          0.6692632436752319,
+          0.3244999945163727
+        ]
+      ],
+      "triangles": 216,
+      "sourceMaterial": "satin",
+      "finishFamily": "satin",
+      "explode": [
+        0,
+        -0.35,
+        0.35
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.92355477809906,
+          0.1607367843389511,
+          0.2815000116825104
+        ],
+        [
+          1.9044710397720337,
+          0.6692632436752319,
+          0.3244999945163727
+        ]
+      ]
+    },
+    {
+      "id": "transverse-beams",
+      "meshName": "transverse_beams",
+      "sourceName": "transverse_beams",
+      "sourceNodeIndex": 106,
+      "sourcePath": "/TubeTransferStudy/transverse_beams",
+      "title": "Cross members",
+      "description": "The transverse supports sit below the conveyor deck.",
+      "center": [
+        -0.009999990463256836,
+        0.9150000214576721,
+        0
+      ],
+      "bounds": [
+        [
+          -1.9700000286102295,
+          0.3799999952316284,
+          -0.36000001430511475
+        ],
+        [
+          1.9500000476837158,
+          1.4500000476837158,
+          0.36000001430511475
+        ]
+      ],
+      "triangles": 324,
+      "sourceMaterial": "structure",
+      "finishFamily": "structure",
+      "explode": [
+        0,
+        -0.3,
+        0
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          -1.9700000286102295,
+          0.3799999952316284,
+          -0.36000001430511475
+        ],
+        [
+          1.9500000476837158,
+          1.4500000476837158,
+          0.36000001430511475
+        ]
+      ]
+    },
+    {
+      "id": "side-bracket",
+      "meshName": "side_bracket",
+      "sourceName": "side_bracket",
+      "sourceNodeIndex": 107,
+      "sourcePath": "/TubeTransferStudy/side_bracket",
+      "title": "Line-side bracket",
+      "description": "This location anchors a conversation about the downstream attachment and who supplies it.",
+      "center": [
+        1.54,
+        1.3299999976158141,
+        0.4069999990686774
+      ],
+      "bounds": [
+        [
+          1.445000001192093,
+          1.2000000023841857,
+          0.38949999992549417
+        ],
+        [
+          1.6349999988079071,
+          1.4599999928474425,
+          0.42449999821186063
+        ]
+      ],
+      "triangles": 36,
+      "sourceMaterial": "machined",
+      "finishFamily": "machined",
+      "explode": [
+        0,
+        -0.18,
+        0.45
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.445000001192093,
+          1.2000000023841857,
+          0.38949999992549417
+        ],
+        [
+          1.6349999988079071,
+          1.4599999928474425,
+          0.42449999821186063
+        ]
+      ]
+    },
+    {
+      "id": "bracket-hardware",
+      "meshName": "bracket_hardware",
+      "sourceName": "bracket_hardware",
+      "sourceNodeIndex": 108,
+      "sourcePath": "/TubeTransferStudy/bracket_hardware",
+      "title": "Bracket screws",
+      "description": "The three screw locations illustrate an attachment pattern.",
+      "center": [
+        1.54,
+        1.336000002324581,
+        0.4350000008642673
+      ],
+      "bounds": [
+        [
+          1.4720000037550927,
+          1.2310000056028365,
+          0.4260000012516975
+        ],
+        [
+          1.6079999962449074,
+          1.4409999990463256,
+          0.44400000047683713
+        ]
+      ],
+      "triangles": 816,
+      "sourceMaterial": "polished",
+      "finishFamily": "polished",
+      "explode": [
+        0,
+        -0.18,
+        0.57
+      ],
+      "group": "interfaces",
+      "finishBasis": "Curated illustrative engineering finish; not a verified material specification.",
+      "cycleBounds": [
+        [
+          1.4720000037550927,
+          1.2310000056028365,
+          0.4260000012516975
+        ],
+        [
+          1.6079999962449074,
+          1.4409999990463256,
+          0.44400000047683713
+        ]
+      ]
+    }
+  ],
+  "operation": {
+    "clipName": "AdvanceOnePocket",
+    "duration": 4,
+    "stages": [
+      {
+        "at": 0,
+        "title": "Follow a pocket",
+        "description": "The pale tube sits crosswise behind a traveling flight.",
+        "nodeId": "lift-carriers"
+      },
+      {
+        "at": 0.5,
+        "title": "Advance along the belt",
+        "description": "The flight and the tube advance together on the belt. The frame stays fixed.",
+        "nodeId": "elevation"
+      },
+      {
+        "at": 0.87,
+        "title": "Reach the upper deck",
+        "description": "The upper pockets move toward the receiving process. This is an illustrative index.",
+        "nodeId": "discharge"
+      }
+    ],
+    "kind": "authored-source-animation"
+  },
+  "cycleBounds": [
+    [
+      -2.400957374558014,
+      -1.0430813157658037e-10,
+      -0.46799999475479126
+    ],
+    [
+      2.4009573739785917,
+      1.7799999713897705,
+      0.47802000004891304
+    ]
+  ],
+  "cycleBoundsSampling": {
+    "coordinates": "source-world",
+    "samples": 241,
+    "purpose": "Sampled framing envelope; not an exact collision or mechanical validation."
+  },
+  "stats": {
+    "meshCount": 108,
+    "nodeCount": 109,
+    "triangles": 42036,
+    "vertices": 126108,
+    "animationClips": 1,
+    "bytes": 3625880,
+    "gzipBytes": 397349
+  }
+}

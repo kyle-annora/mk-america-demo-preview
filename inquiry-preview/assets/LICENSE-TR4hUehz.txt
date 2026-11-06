@@ -1,0 +1,6 @@
+Tube transfer conveyor — Annora, 2026.
+
+Original, locally authored illustrative geometry, animation and presentation for the MK America demo. This model is for local demonstration and review. It does not represent an MK equipment drawing, specification, validated cycle or engineering recommendation. The MK mark on the guard is derived from the supplied official MK SVG and remains the property of its owner. The case photographs informed the geometry and are not embedded in this model.
+
+Case reference: https://uploads.mknorthamerica.com/case-studies/casestudytubefeedingconveyor/
+Official mark: https://uploads.mknorthamerica.com/images/mkNorthAmerica.svg
